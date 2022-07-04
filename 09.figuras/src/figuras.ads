@@ -23,4 +23,11 @@ package Figuras is
        Altura : Centimetros;   
      end record;
    function CalcularArea(This:Triangulo) return Area;
+   
+   --El circulo
+   type Circulo is new Figura with 
+      record      
+         Radio:Centimetros;    
+      end record;
+   function CalcularArea(This:Circulo) return Area;
 end Figuras;
