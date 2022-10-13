@@ -20,14 +20,17 @@ package Juego is
    procedure Init(This: in out TPersonaje; Nombre:String);
    procedure Mover (This: in out TPersonaje; Direccion :TDireccion);
    procedure Mostrar(This:TPersonaje) is abstract;
+
+   type TEnemigo is new TPersonaje with private;    
+   procedure Init(This: in out TEnemigo; Nombre:String); 
+   overriding procedure Mostrar (This: TEnemigo);
    
    type THeroe is new TPersonaje with private;
    procedure Init(This:in out THeroe; Nombre:String);
    overriding procedure Mostrar(This:THeroe);
+   procedure Atacar(This:in out THeroe; Enemigo: TEnemigo);
                     
-   type TEnemigo is new TPersonaje with private;    
-   procedure Init(This: in out TEnemigo; Nombre:String); 
-   overriding procedure Mostrar (This: TEnemigo);
+
 private
    
    type TPersonaje is abstract tagged 

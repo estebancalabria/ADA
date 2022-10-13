@@ -1,0 +1,20 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Cursos\ADA\11.repaso\repaso.gpr
+20220705080836 aa9a336b10896c16f1b808ca84bef161
+[BOUND OBJECT FILES]
+C:\Cursos\ADA\11.repaso\obj\transporte.o
+C:\Cursos\ADA\11.repaso\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Cursos\ADA\11.repaso\obj\
+-LC:\Cursos\ADA\11.repaso\obj\
+-LC:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

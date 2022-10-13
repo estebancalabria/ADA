@@ -1,0 +1,20 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Cursos\ADA\04.funciones\funciones.gpr
+20220627082400 5bb05715a1867cfa5a8eabde96b02c60
+[BOUND OBJECT FILES]
+C:\Cursos\ADA\04.funciones\obj\consola.o
+C:\Cursos\ADA\04.funciones\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Cursos\ADA\04.funciones\obj\
+-LC:\Cursos\ADA\04.funciones\obj\
+-LC:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

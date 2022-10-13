@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>C:\Cursos\ADA\15.rpg\default.gpr</vfs_file>
+    <file_marker column=" 95" line=" 50" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\14.polimorfismo\src\banco.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 5" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\14.polimorfismo\src\banco.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\14.polimorfismo\src\banco.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\14.polimorfismo\src\banco.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\16.web\src\default.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\16.web\src\default-callbacks.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\16.web\src\default-callbacks.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\16.web\src\default.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\16.web\src\default-main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\16.web\src\default.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\16.web\src\default-main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\16.web\src\default-callbacks.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\16.web\src\default-callbacks.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 53" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\juego.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 17" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\juego.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 71" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 13" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 20" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 11" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 24" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\juego.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 72" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 32" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 37" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 31" line=" 41" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 40" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 43" line=" 46" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\juego.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 71" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\juego.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 31" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\juego.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 76" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\juego.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 31" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\juego.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 50" line=" 69" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\juego.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 14" line=" 31" >
+      <vfs_project>C:\Cursos\ADA\15.rpg\default.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\15.rpg\src\juego.ads</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

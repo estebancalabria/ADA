@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Cursos\ADA\IndraOctubre\01HolaMundo\holamundo.gpr
+20221013074420 6b08431b8776beb4545b051b443732c8
+[BOUND OBJECT FILES]
+C:\Cursos\ADA\IndraOctubre\01HolaMundo\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Cursos\ADA\IndraOctubre\01HolaMundo\obj\
+-LC:\Cursos\ADA\IndraOctubre\01HolaMundo\obj\
+-LC:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

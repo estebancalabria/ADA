@@ -1,0 +1,19 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U default%s		default.ads		629868df NE OO PU PK
+
+D default.ads		20220708073842 629868df default%s
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+X 1 default.ads
+2K9*Default 8l5 8e12
+5a4*Host{string}
+6N4*Port
+

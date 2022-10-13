@@ -1,0 +1,6 @@
+package Carta is
+
+   type Palo is (Bastos, Espada, Oro, Copas);
+   type NumeroCarta is range 1..12;
+
+end Carta;

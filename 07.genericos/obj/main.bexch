@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Cursos\ADA\07.genericos\generics.gpr
+20220629081720 b21979725585be1cc69859aaba8f4608
+[BOUND OBJECT FILES]
+C:\Cursos\ADA\07.genericos\obj\pokedex.o
+C:\Cursos\ADA\07.genericos\obj\utilidadestipos.o
+C:\Cursos\ADA\07.genericos\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Cursos\ADA\07.genericos\obj\
+-LC:\Cursos\ADA\07.genericos\obj\
+-LC:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

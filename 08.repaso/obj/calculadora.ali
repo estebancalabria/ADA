@@ -1,0 +1,39 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U calculadora%b		calculadora.adb		796db923 NE OO PK GE
+
+U calculadora%s		calculadora.ads		71a20373 BN EE NE OO PK GE
+
+D calculadora.ads	20220630110146 71a20373 calculadora%s
+D calculadora.adb	20220630110156 08cfba50 calculadora%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [calculadora standard 4 9 none]
+X 1 calculadora.ads
+2I9 T 6r23 6r33 7r24 7r34 8r29 8r39 9r25 9r35 11r37 12r41 16r18 17r22 2|8r27
+. 8r37 20r28 20r38 32r33 32r43 44r29 44r39 51r37 56r41
+4k9*Calculadora 2z9 16E4 19l5 19e16 2|2b14 63l5 63t16
+6V13*Sumar{2I9} 6>19 6>21 2|8b13 13t7
+6*19 A{2I9} 2|8b20 11r22 12r14
+6*21 B{2I9} 2|8b23 11r24 12r16
+7V13*Restar{2I9} 7>20 7>22 2|20b13 25t7
+7*20 A{2I9} 2|20b21 23r22 24r14
+7*22 B{2I9} 2|20b24 23r24 24r16
+8V13*Multiplicar{2I9} 8>25 8>27 2|32b13 37t7
+8*25 A{2I9} 2|32b26 35r22 36r14
+8*27 B{2I9} 2|32b29 35r24 36r16
+9V13*Dividir{2I9} 9>21 9>23 2|44b13 49t7
+9*21 A{2I9} 2|44b22 47r22 48r14
+9*23 B{2I9} 2|44b25 47r24 48r16
+11V13*Get_Ultimo_Valor{2I9} 2|51b13 54t7
+12V13*Get_AnteUltimo_Valor{2I9} 2|56b13 59t7
+16*4 UltimoValor{2I9} 2|10r26 11m7 22r26 23m7 34r26 35m7 46r26 47m7 53r14
+17*4 AnteUltimoValor{2I9} 2|10m7 22m7 34m7 46m7 58r14
+

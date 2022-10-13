@@ -1,0 +1,111 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U main%b		main.adb		22965b26 NE OO SU
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W pokedex%s		pokedex.adb		pokedex.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.val_int%s	s-valint.ads		s-valint.ali
+W utilidadestipos%s	utilidadestipos.adb	utilidadestipos.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
+D a-chlat1.ads		20210520051128 66457d31 ada.characters.latin_1%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-finali.ads		20210520051128 bf4f806b ada.finalization%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-strfix.ads		20210520051130 aeacf44c ada.strings.fixed%s
+D a-strmap.ads		20210520051130 5a88892a ada.strings.maps%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-strunb.ads		20210520051130 03325227 ada.strings.unbounded%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D main.adb		20220629105812 c99c2eb8 main%b
+D pokedex.ads		20220629094546 7b9e053a pokedex%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-finroo.ads		20210520051132 4ff27390 system.finalization_root%s
+D s-memory.ads		20210520051134 597d6634 system.memory%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stalib.adb		20210520051134 977290bf system.standard_library%b
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20210520051134 7bdda3fa system.stream_attributes%s
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-valint.ads		20210520051134 e7fcadb7 system.val_int%s
+D s-valuns.ads		20210520051134 dac7b45d system.val_uns%s
+D s-valuei.ads		20210520051134 978dd0a6 system.value_i%s
+D s-valueu.ads		20210520051134 7b8fccf5 system.value_u%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+D utilidadestipos.ads	20220629105720 909470a4 utilidadestipos%s
+D utilidadestipos.adb	20220629105720 82f1e811 utilidadestipos%b
+G a e
+G c Z b b [main standard 4 11 none]
+G r s pokemon [main standard 4 11 none] [pokemonIP pokedex 13 9 none]
+G r i none [main standard 4 11 none] [get_from_console utilidadestipos 11 14 none]
+G r c none [main standard 4 11 none] [get_latitud pokedex 32 13 none]
+G r c none [main standard 4 11 none] [mostrar_info pokedex 24 14 none]
+X 19 main.adb
+4U11*Main 4b11 18l5 18t9
+5r4 Pika{20|13R9} 10m4 12m11 12r11 13m4 14m4 15r4
+8U14 Get_HP[46|11] 12s4 47|22b14
+X 20 pokedex.ads
+1K9*Pokedex 19|1w6 1r19 20|35e12
+3n25*Pikachu{3E9} 19|10r17
+4I9*PuntosDeVida<short_integer> 19|8r51
+5F9*Latitud<float>
+6F9*Longitud<float>
+9f7*Lat{5F9} 19|14m19
+10f7*Long{6F9} 19|13m19
+13R9*Pokemon 19|5r11 20|17e14
+14e7*Tipo{3E9} 19|10m9
+15i7*Vida{4I9} 19|12m16
+16r7*Ubicacion{8R9} 19|13m9 14m9
+24U14*Mostrar_Info 19|15s9
+32V13*Get_Latitud{5F9} 19|14s26
+X 21 system.ads
+67M9*Address
+X 27 s-memory.ads
+53V13*Alloc{21|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{21|67M9} 105i<c,__gnat_realloc>22
+X 34 s-stalib.adb
+89U14 Break_Start 90i<c,__gnat_break_start>22
+X 46 utilidadestipos.ads
+1K9*UtilidadesTipos 19|2w6 2r27 46|14e20
+10E17 TT 19|8r45
+11u14*Get_From_Console 19|8r28
+

@@ -1,0 +1,117 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_ENUMERATION_MAPS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+
+U leagueoflegends%b	leagueoflegends.adb	0ebcf1bf OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_9%s	s-conca9.adb		s-conca9.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+
+U leagueoflegends%s	leagueoflegends.ads	5eb32dc0 EE OO PF PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
+D a-chlat1.ads		20210520051128 66457d31 ada.characters.latin_1%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-finali.ads		20210520051128 bf4f806b ada.finalization%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-strmap.ads		20210520051130 5a88892a ada.strings.maps%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-strunb.ads		20210520051130 03325227 ada.strings.unbounded%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D leagueoflegends.ads	20220628141610 5d817fe7 leagueoflegends%s
+D leagueoflegends.adb	20220628142308 fdc95b35 leagueoflegends%b
+D system.ads		20210520051136 2ffa5114 system%s
+D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
+D s-conca9.ads		20210520051132 dc4a3424 system.concat_9%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-finroo.ads		20210520051132 4ff27390 system.finalization_root%s
+D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
+D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20210520051134 7bdda3fa system.stream_attributes%s
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [ganarexperiencia leagueoflegends 22 14 none]
+G c Z s b [mostrarinfo leagueoflegends 23 14 none]
+G c Z s s [heroeDA leagueoflegends 12 9 none]
+G c Z s s [heroeDF leagueoflegends 12 9 none]
+G c Z s s [heroeIP leagueoflegends 12 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 18|1r6 2r6 19|3r6 26r8
+X 8 a-string.ads
+16K13*Strings 35e16 18|1r10 2r10
+X 11 a-strunb.ads
+83K21*Unbounded 765e26 18|1w18 2r18
+X 14 a-textio.ads
+58K13*Text_IO 725e16 19|3w10 26r12
+506U14*Put_Line 19|28s7
+X 18 leagueoflegends.ads
+4K9*LeagueOfLegends 25l5 25e20 19|5b14 34l5 34t20
+6I9*Nivel<short_short_integer> 16r19
+7I9*Vida<short_integer> 14r27
+8I9*Experiencia<short_integer> 15r25 22r53 19|11r57 15r37 15r69
+9E9*Personaje 9e60 13r14
+9n25*Elise{9E9}
+9n31*Lulu{9E9}
+9n36*Poppy{9E9}
+9n42*Teemo{9E9}
+9n48*Ekko{9E9}
+9n53*Irelia{9E9}
+12R9*Heroe 17e14 22p14 22r43 23p14 23r31 19|11r45 25r34
+13e7*Nombre{9E9} 19|28r30
+14i7*PuntosDeVidaMaximos{7I9} 19|30r36
+15i7*PuntosExperiencia{8I9} 19|13m12 13r38 15r16 31r34
+16i7*NivelActual{6I9} 19|15r54 16m15 16r35 29r35
+22U14*GanarExperiencia 22=31 22>50 19|11b14 19t7
+22r31 This{12R9} 19|11b32 13m7 13r33 15r11 15r49 16m10 16r30
+22i50 XP{8I9} 19|11b52 13r58
+23U14*MostrarInfo 23>26 19|25b14 32t7
+23r26 This{12R9} 19|25b27 28r25 29r30 30r31 31r29
+

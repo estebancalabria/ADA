@@ -1,0 +1,3 @@
+main.adb:42:09: error: no selector "PosicionX" for private type "Vehiculo" defined at transporte.ads:7
+main.adb:43:09: error: no selector "VelocidadX" for private type "Vehiculo" defined at transporte.ads:7
+main.adb:47:09: error: no selector "PosicionX" for private type "Vehiculo" defined at transporte.ads:7

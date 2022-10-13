@@ -1,0 +1,96 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U transporte%b		transporte.adb		f7c30413 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U transporte%s		transporte.ads		243051e0 EE OO PF PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-flteio.ads		20210520051128 e18a47a0 ada.float_text_io%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-tiflio.ads		20210520051130 fcca4daa ada.text_io.float_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20210520051134 7bdda3fa system.stream_attributes%s
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D transporte.ads	20220705085818 243051e0 transporte%s
+D transporte.adb	20220705091450 9c8dc73e transporte%b
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [mostrar transporte 14 14 none]
+G c Z s b [actualizar transporte 15 14 none]
+G c Z s s [vehiculoDA transporte 7 9 none]
+G c Z s s [vehiculoDF transporte 7 9 none]
+G c Z s s [vehiculoIP transporte 7 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 32|1r6 1r23 2r6 2r29
+X 3 a-flteio.ads
+20K13*Float_Text_IO[11|46] 32|2w10 2r33
+X 10 a-textio.ads
+58K13*Text_IO 725e16 32|1w10 1r27
+463U14*Put 32|8s7 10s7 12s7
+506U14*Put_Line 32|13s7
+X 11 a-tiflio.ads
+82U14*Put 32|9s7[3|20] 11s7[3|20]
+X 31 transporte.ads
+1K9*Transporte 17l5 17e15 32|4b14 23l5 23t15
+3F9*Metros<float> 9r19 32|19r11
+4F9*KilometrosPorHora<float> 8r20
+5I9*Segundos<integer> 15r54 32|16r54
+7R9*Vehiculo 10e14 12r29 14p14 14r27 15p14 15r37 32|6r27 16r37
+8f7*VelocidadX{4F9} 32|9r22 19r37
+9f7*PosicionX{3F9} 32|11r22 18m12 18r30
+12P9*PVehiculo(7R9)
+14U14*Mostrar 14>22 32|6b14 14t7
+14r22 This{7R9} 32|6b22 9r17 11r17
+15U14*Actualizar 15=25 15>47 32|16b14 20t7
+15r25 This{7R9} 32|16b25 18m7 18r25 19r32
+15i47 Tiempo{5I9} 32|16b47 19r76
+

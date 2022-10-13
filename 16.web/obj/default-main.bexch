@@ -1,0 +1,45 @@
+[GENERATED OBJECT FILE]
+b__default-main.o
+[PROJECT FILES]
+C:\Cursos\ADA\16.web\default.gpr
+20220708073842 9048cd572fd39263874108e602c59bd5
+C:\coding\gnat\share\gpr\xmlada_dom.gpr
+20210520132532 5ebfe72ced0d7e80a9359cdbfef6ed8d
+C:\coding\gnat\share\gpr\xmlada_input.gpr
+20210520132534 57ec4e9d62a4e4bccc84dcdcafcd0ce8
+C:\coding\gnat\share\gpr\xmlada_unicode.gpr
+20210520132534 08ca51fbece88175b6f8fb7d538f0dbc
+C:\coding\gnat\share\gpr\xmlada_sax.gpr
+20210520132532 323e9ae441981caa0121b25566ab2b95
+C:\coding\gnat\share\gpr\xmlada_schema.gpr
+20210520132532 21bfb576df99afdc177aa7e2ad1491d3
+C:\coding\gnat\share\gpr\aws.gpr
+20210520135556 e185469636d6898d574dfa77038fc4c8
+[BOUND OBJECT FILES]
+C:\Cursos\ADA\16.web\obj\default.o
+C:\Cursos\ADA\16.web\obj\default-callbacks.o
+C:\Cursos\ADA\16.web\obj\default-main.o
+[GENERATED SOURCE FILES]
+b__default-main.ads
+b__default-main.adb
+b__default-main.ali
+[RESULTING OPTIONS]
+-LC:\Cursos\ADA\16.web\obj\
+-LC:\Cursos\ADA\16.web\obj\
+-LC:\coding\gnat\lib\aws.static\
+-LC:\coding\gnat\lib\xmlada\xmlada_schema.static\
+-LC:\coding\gnat\lib\xmlada\xmlada_sax.static\
+-LC:\coding\gnat\lib\xmlada\xmlada_unicode.static\
+-LC:\coding\gnat\lib\xmlada\xmlada_input.static\
+-LC:\coding\gnat\lib\xmlada\xmlada_dom.static\
+-LC:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+-lws2_32
+C:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnarl.a
+C:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-lws2_32
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads
+-lm

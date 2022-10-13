@@ -1,0 +1,20 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Cursos\ADA\14.polimorfismo\oopdemo.gpr
+20220706082348 fa473783e79bc7041349272b57f8598d
+[BOUND OBJECT FILES]
+C:\Cursos\ADA\14.polimorfismo\obj\banco.o
+C:\Cursos\ADA\14.polimorfismo\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Cursos\ADA\14.polimorfismo\obj\
+-LC:\Cursos\ADA\14.polimorfismo\obj\
+-LC:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

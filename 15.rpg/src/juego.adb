@@ -66,4 +66,14 @@ package body Juego is
       end if;   
    end Mover;
    
+   procedure Atacar(This:in out THeroe; Enemigo: TEnemigo) is
+   Begin
+      if ((abs Integer(This.Posicion.Posicion_X)-Integer(Enemigo.Posicion.Posicion_X))<2) 
+        and ((abs Integer(This.Posicion.Posicion_Y)-Integer(Enemigo.Posicion.Posicion_Y))<2) then
+         Begin
+            --Enemigo.Esta_Vivo := False;
+            This.Experiencia := This.Experiencia + Enemigo.Experiencia_Otorgada;
+         end;
+   end;
+   
 end Juego;
