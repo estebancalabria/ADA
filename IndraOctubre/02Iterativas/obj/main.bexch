@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Cursos\ADA\IndraOctubre\02Iterativas\iteraciones.gpr
+20221014071008 23fbc5977ccc3a9de222d0c83662a0e2
+[BOUND OBJECT FILES]
+C:\Cursos\ADA\IndraOctubre\02Iterativas\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Cursos\ADA\IndraOctubre\02Iterativas\obj\
+-LC:\Cursos\ADA\IndraOctubre\02Iterativas\obj\
+-LC:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
