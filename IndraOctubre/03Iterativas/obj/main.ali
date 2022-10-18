@@ -6,12 +6,12 @@ A -march=x86-64
 P ZX
 
 RN
-RV NO_FLOATING_POINT
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
 RV NO_IO
-RV NO_DEFAULT_INITIALIZATION
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U main%b		main.adb		d9f8c4d1 NE OO SU
+U main%b		main.adb		6d3ab214 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -19,7 +19,6 @@ W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-Z system.img_int%s	s-imgint.ads		s-imgint.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
@@ -39,13 +38,11 @@ D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D main.adb		20221017092228 209b74c2 main%b
+D main.adb		20221017105340 94590207 main%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
 D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
-D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
-D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
 D s-parame.ads		20210520051134 4752c4cb system.parameters%s
 D s-putima.ads		20210520051134 4e095881 system.put_images%s
 D s-rannum.ads		20210520051134 c3978523 system.random_numbers%s
@@ -71,16 +68,13 @@ X 6 a-numeri.ads
 16K13*Numerics 35e17 19|5r10 5r41
 X 7 a-nuflra.ads
 41K22*Float_Random 74e30 19|5w19 5r50
-47R9*Generator<28|65R9> 19|140r11
-49F12*Uniformly_Distributed{float}
-51V13*Random{49F12}<28|73p13> 19|146s38
-53U14*Reset<28|103p14> 19|143s7
 X 13 a-textio.ads
 58K13*Text_IO 725e16 19|1w10 1r27
-506U14*Put_Line 19|147s10
+506U14*Put_Line 19|14s23
+546X4*Data_Error 19|14r9
+X 15 a-tiinio.ads
+59U14*Get 19|12s4[4|18]
 X 19 main.adb
-7U11*Main 7b11 152l5 152t9
-140r7 G{7|47R9} 143r13 146r45
-141i7 Numero_Al_Azar{integer} 146m10 147r19
-144i11 I{integer}
+7U11*Main 7b11 157l5 157t9
+10i4 N{integer} 12m8
 

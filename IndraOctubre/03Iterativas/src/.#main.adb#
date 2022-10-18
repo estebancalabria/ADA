@@ -7,11 +7,13 @@ with Ada.Numerics.Float_Random; use Ada.Numerics.Float_Random;
 procedure Main is
    --  Sumatoria : Integer := 0;
    --  Entrada_Datos : Integer;
-   N : Integer;
+   --  N : Integer;
 begin
-   Get(N);
-exception
-   when Data_Error => Put_Line("Mal Ingreso de Datos");
+--     --Manejo de Excepciones
+--     Get(N);
+--  exception
+--     when Data_Error => Put_Line("Mal Ingreso de Datos");
+
    --Calcule la sumatoria de valores hasta que el usuario ingrese un 0
    --  Put_Line("Ingrese valores. Un 0 finaliza la carga");
    --  Put_Line("Se calculara la sumatoria");
