@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 13" line=" 1" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 41" line=" 7" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\constantes.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 8" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\indra-io.ads</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr
+20221019072348 6fcbf3afc99e0693ac0227c085753dc9
+[BOUND OBJECT FILES]
+C:\Cursos\ADA\IndraOctubre\05Paquetes\obj\constantes.o
+C:\Cursos\ADA\IndraOctubre\05Paquetes\obj\io.o
+C:\Cursos\ADA\IndraOctubre\05Paquetes\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Cursos\ADA\IndraOctubre\05Paquetes\obj\
+-LC:\Cursos\ADA\IndraOctubre\05Paquetes\obj\
+-LC:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
