@@ -1,0 +1,20 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Cursos\ADA\IndraOctubre\06Tipos\tipos.gpr
+20221020084118 bf2b2d76479cec899ffa57eceb26704e
+[BOUND OBJECT FILES]
+C:\Cursos\ADA\IndraOctubre\06Tipos\obj\geometria.o
+C:\Cursos\ADA\IndraOctubre\06Tipos\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Cursos\ADA\IndraOctubre\06Tipos\obj\
+-LC:\Cursos\ADA\IndraOctubre\06Tipos\obj\
+-LC:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/coding/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

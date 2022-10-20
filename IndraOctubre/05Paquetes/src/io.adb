@@ -27,13 +27,13 @@ package body IO is
    
    function Try_Get_Integer
      (Value: out Integer) return Boolean is
-      
    begin
       Value := Integer'Value(Get_Line);
       return True;
    exception
       when others => return False;
    end Try_Get_Integer;
+   
    
    function Get_Integer
      (ErrorMessage: String := "No Ingreso un Numero.Vuelva a intentar") return Integer is  
@@ -43,7 +43,6 @@ package body IO is
       while not(EntradaCorrecta) loop
          EntradaCorrecta := Try_Get_Integer(Value);   
          Put_Line(ErrorMessage);
-         Put_Line("");
       end loop;
       return Value;
    end Get_Integer;

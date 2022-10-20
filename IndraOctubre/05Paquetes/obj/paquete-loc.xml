@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Locations >
   <Project>
-    <vfs_file />
+    <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_file>
     <file_marker column=" 13" line=" 1" >
       <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
       <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\main.adb</vfs_file>
@@ -10,13 +10,193 @@
       <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
       <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\constantes.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 20" line=" 8" >
+    <file_marker column=" 20" line=" 9" >
       <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
       <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 1" line=" 1" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
       <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\indra-io.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 17" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 43" line=" 15" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 12" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 5" line=" 50" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 39" line=" 14" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 17" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 17" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 35" line=" 3" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 25" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 52" line=" 19" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 23" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 69" line=" 17" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 4" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 19" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 23" line=" 21" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 16" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 19" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 17" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 19" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 14" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 5" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 52" line=" 17" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 1148" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-strfix.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 50" line=" 17" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 1097" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-strfix.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 31" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 90" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-tiinio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 31" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 90" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-tiinio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 35" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-tiinio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 69" line=" 36" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-tiinio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 31" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 59" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-tiinio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 30" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 29" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 38" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 87" line=" 39" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 45" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 45" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 200" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-textio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 47" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 43" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 11" line=" 40" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 17" line=" 43" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\05Paquetes\paquete.gpr</vfs_project>
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\05Paquetes\src\io.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>
