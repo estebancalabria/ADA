@@ -1,0 +1,2 @@
+main.adb:19:17: error: subtype indication expected
+main.adb:36:31: error: missing ";"
