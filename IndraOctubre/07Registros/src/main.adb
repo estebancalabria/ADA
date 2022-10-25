@@ -16,32 +16,7 @@ procedure Main is
 
    Una_Persona : Persona;
 
-   type D is new tagged Integer;
-   subtype MS is D;
-   subtype KMH is D;
-
-   function TO_MS(A:MS) return MS is
-   begin
-      return A;
-   end;
-
-   function TO_MS(A:KMH) return MS is
-   begin
-      return A*1000;
-   end;
-
-   procedure Atomos(Distancia:D) is
-     A : MS;
-    begin
-         A := TO_MS(Distancia)
-        Put_Line(A'Image);
-   end;
-
-   Vel : KMH := 0;
 begin
-   Atomos(Vel);
-
-
    Put_Line("Cual es tu nombre?");
    --Nombre := To_Unbounded_String(Get_Line);
    Una_Persona.Nombre := To_Unbounded_String(Get_Line);
