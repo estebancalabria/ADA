@@ -3,43 +3,50 @@ M P W=b
 A -gnatA
 A -mtune=generic
 A -march=x86-64
-P ZX
+P SS ZX
 
 RN
 RV NO_FLOATING_POINT
 RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U main%b		main.adb		0432678b NE OO SU
+U main%b		main.adb		c0841c40 NE OO SU
 W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-Z system.concat_2%s	s-conca2.adb		s-conca2.ali
-Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-flteio.ads		20210520051128 e18a47a0 ada.float_text_io%s
 D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20210520051130 84bea7a3 ada.numerics%s
+D a-nuflra.ads		20210520051130 4056ab7a ada.numerics.float_random%s
 D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
 D a-string.ads		20210520051130 90ac6797 ada.strings%s
 D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
 D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
 D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-tiflio.ads		20210520051130 fcca4daa ada.text_io.float_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D main.adb		20221025063538 aac6b2e6 main%b
+D main.adb		20221025072902 cfac25f7 main%b
 D system.ads		20210520051136 2ffa5114 system%s
-D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
 D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
-D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
-D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
 D s-parame.ads		20210520051134 4752c4cb system.parameters%s
 D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-rannum.ads		20210520051134 c3978523 system.random_numbers%s
 D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
 D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
 D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
@@ -51,19 +58,41 @@ D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
-G c Z b b [main standard 3 11 none]
+G c Z b b [main standard 5 11 none]
 X 1 ada.ads
-16K9*Ada 20e8 13|1r6 1r23
-X 9 a-textio.ads
-58K13*Text_IO 725e16 13|1w10 1r27
-506U14*Put_Line 13|24s7 25s7 26s7
-X 13 main.adb
-3U11*Main 3b11 32l5 32t9
-9F11 Dinero<short_float> 11r50 13r56 15r57
-11A11 Montos(9F11)<integer> 18r16
-13A11 Array_Natural(9F11)<integer> 19r30
-15A12 Array_Integer(9F11)<integer> 20r30
-18a7 Ventas{11A11} 24r58
-19a7 Ventas_Natural_Range{13A11} 25r57
-20a7 Ventas_Integer_Range{15A12} 26r57
+16K9*Ada 20e8 17|1r6 1r23 2r6 2r37 3r6 3r29
+X 3 a-flteio.ads
+20K13*Float_Text_IO[13|46] 17|3w10 3r33
+X 5 a-numeri.ads
+16K13*Numerics 35e17 17|2r10 2r41
+X 6 a-nuflra.ads
+41K22*Float_Random 74e30 17|2w19 2r50
+47R9*Generator<24|65R9> 17|36r14
+49F12*Uniformly_Distributed{float}
+51V13*Random{49F12}<24|73p13> 17|40s33
+X 12 a-textio.ads
+58K13*Text_IO 725e16 17|1w10 1r27
+87I12*Field{integer}
+506U14*Put_Line 17|68s13 79s7 82s7 83s7
+X 13 a-tiflio.ads
+82U14*Put 17|67s13[3|20] 80s7[3|20] 84s7[3|20]
+86i7 Exp{12|87I12} 17|67r26[3|20] 80r30[3|20] 84r30[3|20]
+X 17 main.adb
+5U11*Main 5b11 87l5 87t9
+31A12 Array_Float(float)<integer> 35r70 37r19 47r37 58r44 64r32 72r17
+35V16 Arreglo_Numeros_Aleatorios{31A12} 35b16 35>43 43t10 72s32
+35i43 Num_N{integer} 37r34
+36r10 G{6|47R9} 40r40
+37a10 Result{31A12} 39r19 40m13 42r17
+39i14 I{integer} 40r20
+47V16 Sumatoria{float} 47b16 47>26 54t10 60s16 80s11
+47a26 Entrada{31A12} 50r19 51r34
+48f10 Retorno{float} 51m13 51r24 53r17
+50i14 I{integer} 51r42
+58V16 Promedio{float} 58b16 58>25 61t10 84s11
+58a25 Arreglo_Media{31A12} 60r26 60r47
+64U17 Mostrar 64b17 64>26 70l11 70t18 78s7
+64a26 Arr{31A12} 66r19 67r17
+66i14 I{integer} 67r22
+72a7 Numeros{31A12} 78r15 80r21 84r20
 
