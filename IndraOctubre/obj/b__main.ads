@@ -40,7 +40,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#c0841c40#;
+   u00001 : constant Version_32 := 16#c03bd8ab#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#2e11c0b1#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -362,10 +362,14 @@ package ada_main is
    pragma Export (C, u00160, "system__win32__extS");
    u00161 : constant Version_32 := 16#a5b55d2f#;
    pragma Export (C, u00161, "system__val_unsS");
-   u00162 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00162, "system__memoryB");
-   u00163 : constant Version_32 := 16#76873720#;
-   pragma Export (C, u00163, "system__memoryS");
+   u00162 : constant Version_32 := 16#f1de7063#;
+   pragma Export (C, u00162, "floatarrayB");
+   u00163 : constant Version_32 := 16#46f01170#;
+   pragma Export (C, u00163, "floatarrayS");
+   u00164 : constant Version_32 := 16#eca5ecae#;
+   pragma Export (C, u00164, "system__memoryB");
+   u00165 : constant Version_32 := 16#76873720#;
+   pragma Export (C, u00165, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -530,6 +534,8 @@ package ada_main is
    --  system.random_numbers%b
    --  ada.numerics.float_random%s
    --  ada.numerics.float_random%b
+   --  floatarray%s
+   --  floatarray%b
    --  main%b
    --  END ELABORATION ORDER
 

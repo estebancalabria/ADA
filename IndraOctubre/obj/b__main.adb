@@ -34,6 +34,7 @@ package body ada_main is
    E153 : Short_Integer; pragma Import (Ada, E153, "ada__calendar_E");
    E094 : Short_Integer; pragma Import (Ada, E094, "ada__text_io_E");
    E151 : Short_Integer; pragma Import (Ada, E151, "system__random_seed_E");
+   E163 : Short_Integer; pragma Import (Ada, E163, "floatarray_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -218,6 +219,7 @@ package body ada_main is
       E094 := E094 + 1;
       System.Random_Seed'Elab_Body;
       E151 := E151 + 1;
+      E163 := E163 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -255,6 +257,7 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
+   --   C:\Cursos\ADA\IndraOctubre\obj\floatarray.o
    --   C:\Cursos\ADA\IndraOctubre\obj\main.o
    --   -LC:\Cursos\ADA\IndraOctubre\obj\
    --   -LC:\Cursos\ADA\IndraOctubre\obj\
