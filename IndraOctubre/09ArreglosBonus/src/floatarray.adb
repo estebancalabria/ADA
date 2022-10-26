@@ -1,6 +1,12 @@
-package body Float_Array is
-      
-      --declara una funcion que recibe un numero N y me devuelve un arreglo
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Numerics.Float_Random; use Ada.Numerics.Float_Random;
+with Ada.Float_Text_IO; use Ada.Float_Text_IO;
+
+
+
+package body FloatArray is
+
+         --declara una funcion que recibe un numero N y me devuelve un arreglo
       --de N numeros al azar
       function Arreglo_Numeros_Aleatorios(Num_N : in Integer) return Array_Float is
          G : Generator;
@@ -64,4 +70,5 @@ package body Float_Array is
       end Mayores;
 
 
-end Float_Array;
+
+end FloatArray;

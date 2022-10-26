@@ -4,6 +4,7 @@ with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 with FloatArray; use FloatArray;
 
 procedure Main is
+
 begin
    --  declare
    --    --type Montos is array (Integer range <>) of Float;

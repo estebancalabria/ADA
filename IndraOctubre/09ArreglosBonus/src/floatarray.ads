@@ -1,6 +1,6 @@
-package Float_Array is
-   
-   type Array_Float is Array(Positive range <>) of Float;
+package FloatArray is
+
+   type Array_Float is private;
 
    function Arreglo_Numeros_Aleatorios(Num_N : in Integer) return Array_Float;
    
@@ -12,4 +12,8 @@ package Float_Array is
    
    function Mayores(Arreglo : Array_Float; Valor : Float) return Array_Float;
    
-end Float_Array;
+private
+   
+   type Array_Float is Array(1..100) of Float;
+   
+end FloatArray;
