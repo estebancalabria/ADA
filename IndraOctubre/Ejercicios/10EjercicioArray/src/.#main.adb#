@@ -1,0 +1,8 @@
+procedure Main is
+
+begin
+   Put_Line(To_String(Variable_Unbouded_String))
+     Put_Line(Entero'Image)
+     Variable_Unbounded_String:= To_Unbounded_String(Get_Line));
+   null;
+end Main;
