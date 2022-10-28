@@ -6,7 +6,7 @@ package Juego is
    Default_Max_Hp : constant Integer := 1000;
    Default_Max_Level : constant Integer := 20;
 
-   type Profesiones is (Guerro, Mago, Asesino, Ninja, Sanador) with Default_Value => Guerro;
+   type Profesiones is (Guerrero, Mago, Asesino, Ninja, Sanador) with Default_Value => Guerrero;
    
    type Niveles is range 1..Default_Max_Level with Default_Value => 1;
    

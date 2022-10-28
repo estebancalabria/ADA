@@ -59,6 +59,6 @@ package body IO is
          end if;         
       end loop;
       return Value;
-   end Get_Integer;
+   end Get_Integer;   
    
 end IO;

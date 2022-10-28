@@ -14,4 +14,5 @@ package IO is
    function Get_Integer
      (Prompt : String := "";
       Error_Message: String := Default_Integer_Error_Message) return Integer;
+
 end IO;
