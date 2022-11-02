@@ -12,9 +12,18 @@ package Personaje is
    
    --Constructor
    function Create(Nombre:String) return Campeon;
+   
    --Metodos de la clase Campeon
    --Se dan cuando el primer parametro es un tagged Record
+   
+   --Getters y Setters
+   --Getters
+   function Get_Nombre(This:Clase_Campeon) return String;
+   function Get_Nivel(This:Clase_Campeon) return Niveles;
+     
+   --Otros Metodos
    function To_String(This:Clase_Campeon) return String;
+   
 
 private
    
