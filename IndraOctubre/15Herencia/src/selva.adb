@@ -21,7 +21,7 @@ package body Selva is
       return Result;
    end Create_Leon;
    
-   procedure Hablar(This: in Clase_Leon) is
+   overriding procedure Hablar(This: in Clase_Leon) is
    begin
       Put_Line("Rooooooooooooooaaaaaaaaaaaaaaaaaarrrrrrrrrrrr");
    end Hablar;
@@ -34,13 +34,22 @@ package body Selva is
       return Result;
    end Create_Jirafa;
    
-   procedure Hablar(This: in Clase_Jirafa) is
+   overriding procedure Hablar(This: in Clase_Jirafa) is
    begin
       Put_Line("Soy una jirafa y no emito sonido");
    end Hablar;
    
 
-   
-   
+   function Create_Aguila(Un_Nombre : String) return Animal is   
+      Result : Animal := new Clase_Aguila;   
+   begin      
+      Result.Nombre := To_Unbounded_String(Un_Nombre);      
+      return Result;   
+   end;
+ 
+   overriding procedure Hablar(this: in Clase_Aguila) is    
+   begin      
+      Put_Line("HUHUHUHUHUHHHUHUHU");   
+   end;
 
 end Selva;
