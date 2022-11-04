@@ -14,6 +14,8 @@ Guia POO en ADA
 
 4. Generar un access (Referencia) para la clase abajo del tagged private
               type NNN is     access Clase_NNN;
+			 o
+              type NNN is     access Clase_NNN'Class; (Si puedo tener subclases)
    Esto es para manejar los objetos como referencias al igual que Java
 
 5. Generar un constructor (una funcion que devuelva una referencia a 
@@ -27,4 +29,62 @@ Guia POO en ADA
 7.Generar los metodos de la clase
   Los metodos de la clase tienen como primer parametro un objeto del 
   tipo Clase_NNN
+
     
+Guia POO con Polimorfismo y Herencia
+
+1. Generar un paquete para la jerarquia de clases (uno o mas)
+   1.1. (Encapsulamiento) separar la seccion publica y privada dentro del paquete
+
+2. Declarar un tipo para la clase abstracta (con abstract) 
+   Clase Abstracta : Una clase padre de varias clase. Una plantilla. No se puede instanciar.
+                     Para generar subclases.
+                     Como es abstracta NO va a tener un constructor
+   2.1. Parte publica
+         type Clase_<Nombre> is abstract tagged private;
+   2.2. Parte Privada 
+         type Clase_<Nombre> is abstract tagged 
+         record
+            ...atributos...
+         end record;    
+
+3. Declarar un access (referencia) a objetos de la clase abstracta
+   3.1. Parte publica
+             type <Nombre> is access Clase_<Nombre>'Class
+        Nota: Como ese acces va a "apuntar" a objetos de las subclases entonces no olvidar el 'Class
+              (Atributo Class)
+
+4. Definir Setters y Gettes de los atributos (si los tuviera)
+   4.1. El ads
+         function Get_<Atributo>(This: in Clase_<Nombre>) returns <Tipo>;
+   4.2. En el adb
+         Agrego la implementacion
+
+5. Definir metodos
+   5.1. Definir metodos abstractos (en el ads)
+           function Metodo_Uno(This: in Clase_<Nombre>) returns <Tipo> is abstract;
+           procedure Metodo_Dos(This: in Clase_<Nombre>) is abstract;
+        Nota: Si tenemos una clase abstracta tiene sentido tener algun metodo abstracto
+
+   5.2. (Opcional) Definir metodos concretos e implementarlos en el adb
+
+6. Agregar Subclases
+     6.1. Parte publica del ads
+            type Clase_<Nombre_Subclase> is new Clase_<Nombre> with private;
+     6.3. Parte privada del ads
+            type Clase_Leon is new Clase_Animal with
+            record
+               --nuevos atributos si los hubiera o null--
+            end record;
+
+7. Generar el constructor de la subclase
+     function Create_<Nombre_Subclase>() returns (Access a la superclase);
+
+8. Implementar los metodos abstractos en las subclases
+      8.1 en el ads
+ 			overriding procedure Metodo(This: in Clase_<Nombre_Subclase);
+      8.2.en el adb
+			overriding procedure Metodo(This: in Clase_<Nombre_Subclase) is
+		    begin
+                .. 
+             end
