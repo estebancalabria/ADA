@@ -1,21 +1,17 @@
 <?xml version="1.0"?>
 <Locations >
   <Project>
-    <vfs_file />
+    <vfs_file>C:\Cursos\ADA\14.polimorfismo\oopdemo.gpr</vfs_file>
     <file_marker column=" 95" line=" 50" >
-      <vfs_project />
+      <vfs_project>C:\Cursos\ADA\14.polimorfismo\oopdemo.gpr</vfs_project>
       <vfs_file>C:\Cursos\ADA\14.polimorfismo\src\banco.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 5" >
-      <vfs_project />
+    <file_marker column=" 19" line=" 31" >
+      <vfs_project>C:\Cursos\ADA\14.polimorfismo\oopdemo.gpr</vfs_project>
       <vfs_file>C:\Cursos\ADA\14.polimorfismo\src\banco.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\Cursos\ADA\14.polimorfismo\src\banco.adb</vfs_file>
-    </file_marker>
     <file_marker current="true" column=" 1" line=" 1" >
-      <vfs_project />
+      <vfs_project>C:\Cursos\ADA\14.polimorfismo\oopdemo.gpr</vfs_project>
       <vfs_file>C:\Cursos\ADA\14.polimorfismo\src\banco.ads</vfs_file>
     </file_marker>
   </Project>
