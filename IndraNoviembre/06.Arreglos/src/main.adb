@@ -1,6 +1,8 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with IO; use IO;
 with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
+with Ada.Strings.Fixed; use Ada.Strings.Fixed;
+with Ada.Characters.Handling; use Ada.Characters.Handling;
 
 procedure Main is
 
@@ -116,8 +118,52 @@ begin
    --Rehacer el ejercicio de las notas pero con unconstrained arrays
    declare
       type Nota is new Integer range 1..10 with Default_Value => 5;
+      type Calificacion is (Insuficiente,Reprobado,Aprobado,Bueno, Muy_Bueno,Excelente);
       type Nota_Promedio is new Float range 1.0..10.0;
       type Lista_Examenes is array(Positive range <>) of Nota with Default_Component_Value => 10;
+
+      Nota_To_Clasificacion : constant array (Nota) of Calificacion :=
+        (1 => Insuficiente,
+         2..5 => Reprobado,
+         6|7 => Aprobado,
+         8 => Bueno,
+         9 => Muy_Bueno,
+         others => Excelente);
+
+
+      function Replace_Character
+        (Input:in String;
+         From:in Character;
+         To:in Character) return String is
+         Result : String := Input;
+      begin
+         for I in Result'Range loop
+            if Result(I) = From then
+               Result(I) := To;
+            end if;
+         end loop;
+         return Result;
+      end Replace_Character;
+
+
+      --Me lo completan uds?
+      -- ISUFICIENTE ====> Insuficiente
+      function To_String(Item : Calificacion) return String is
+         Result : String := Item'Image;
+      begin
+         --  for I in Result'Range loop
+         --     if I>1 then
+         --        Result(I) := To_Lower(Result(I));
+         --     end if;
+         --  end loop;
+         --  return Result;
+
+         -- Result es "Muy_Bueno"
+         --     M              uy_Bueno
+         return Result(1..1) & To_Lower(Replace_Character(Result(2..Item'Image'Length),'_',' '));
+      end To_String;
+
+
 
       procedure Cargar_Notas(Lista : out Lista_Examenes) is
       begin
@@ -129,11 +175,13 @@ begin
 
       end Cargar_Notas;
 
+      --Modificar para mostrar la calificacion entre parentesis
+      -- 1 (INSUFICIENTE)
       procedure Mostrar_Notas(Lista : in Lista_Examenes) is
       begin
          Put_line("Has sacado las siguientes notas:");
          for Examen of Lista loop
-            Put_line(Examen'Image);
+            Put_line(Examen'Image & " (" &  To_String(Nota_To_Clasificacion(Examen)) & ")");
          end loop;
       end Mostrar_Notas;
 
@@ -162,13 +210,37 @@ begin
       end Promedio;
 
 
+      function Examenes_Aprobados
+        (Examenes : Lista_Examenes;
+         Nota_Aprobacion : Nota := 5) return Lista_Examenes is
+         Aprobados : Lista_Examenes(1..Examenes'Length);
+         Cantidad_Aprobados : Integer := 0;
+      begin
+         for Examen of Examenes loop
+            if (Examen > Nota_Aprobacion) then
+               Cantidad_Aprobados := Cantidad_Aprobados + 1;
+               Aprobados(Cantidad_Aprobados) := Examen;
+            end if;
+         end loop;
+         return Aprobados(1..Cantidad_Aprobados); --Me puede devolver un arreglo vacio
+      end;
 
+
+
+      --1 : Insuficiente, 2,3,4,5 : Reprobado  6..7 Aprobado 8 Bueno 9 Muy Bueno 10 Excelente
+      -- Declarar el enumerado de Calificacion
+      -- Generamos un array que el indice se la nota y el valor la Calificacion
 
       Examenes : Lista_Examenes(1..Get_Integer("¿Cuantos exámenes has hecho?"));
 
+      --Esto es un Array vacio o nulo (Array con longitud 0);
+      --Vector vacios o Null Arrays
+      Array_Vacio : Lista_Examenes(2..1);
    begin
       Cargar_Notas(Examenes);
       Mostrar_Notas(Examenes);
       Put_Line("Tu Nota Mas Alta es un" & Nota_Mas_Alta(Examenes)'Image);
+      Put_Line("El promedio es " & To_String(Float(Promedio(Examenes))));
+      Put_Line("Aprobaste " & Examenes_Aprobados(Examenes)'Length'Image & " examenes");
    end;
 end Main;

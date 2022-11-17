@@ -1,3 +1,6 @@
+with Ada.Strings; use Ada.Strings;
+with Ada.Strings.Fixed; use Ada.Strings.Fixed;
+
 package body io is
 
    function Get_Non_Empty_Line
@@ -114,7 +117,7 @@ package body io is
        Separador_Decimales : Character := ',') return String is
       Result :String := Integer(Float'Floor(Input))'Image 
         & Separador_Decimales 
-        & Integer((Input - Float'Floor(Input)) * Float(10 ** Cantidad_Decimales))'Image ;
+        & Trim(Integer((Input - Float'Floor(Input)) * Float(10 ** Cantidad_Decimales))'Image, Both);
    begin
       return result;
    end To_String;
