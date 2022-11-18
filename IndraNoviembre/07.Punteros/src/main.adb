@@ -35,7 +35,7 @@ begin
       BB : Puntero_Entero := AA;
    begin
       BB.all := 50;  --Cambio el valor que tiene en el heap a travez del puntero
-      Put_Line(AA.all'Image);
+      Put_Line(AA.all'Image);  --Ahora muestra 50 porque AA y BB "apuntan" al mismo lugar en el heap
    end;
 
 
