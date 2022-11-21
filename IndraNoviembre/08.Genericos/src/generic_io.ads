@@ -1,7 +1,5 @@
 generic
    type Tipo is (<>);  --El tipo es discreto
-                           --
-   
 package Generic_IO is
    
    Default_Prompt : constant String := "Ingrese un valor";
@@ -16,4 +14,7 @@ package Generic_IO is
      (Prompt:String := Default_Prompt;
       Error:String := Default_Error_Message) return Tipo;
 
+   function To_String(Item:Tipo) return String;
+  
+   procedure Show_Discrete;
 end Generic_IO;

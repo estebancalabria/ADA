@@ -2,6 +2,7 @@ with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Containers.Vectors;
 with IO; use IO;
 with Generic_IO;
+with Utils;
 
 procedure Main is
 begin
@@ -83,19 +84,59 @@ begin
    --  end;
    --
 
+   --  declare
+   --     use Utils;
+   --     type Dias is (Lunes,Martes,Miercoles,Jueves,Viernes,Sabado,Domingo);
+   --
+   --     package Dias_IO is new Generic_IO (Tipo => Dias);
+   --     use Dias_IO;
+   --
+   --     procedure Show_Dias renames Show_Discrete;
+   --     procedure Swap_Dias is new Swap(Dias);
+   --     procedure Show_V is new Show_Vertical(T => Dias,
+   --                                           --To_String => Dias'Image);
+   --                                           To_String => Dias_IO.To_String);
+   --
+   --     Dia: Dias;
+   --     Otro_Dia : Dias;
+   --
+   --     --  type P is record
+   --     --     Nombre : String(1..5);
+   --     --  end record;
+   --     --
+   --     --  PP : P := (Nombre => "12345");
+   --
+   --  begin
+   --     --  Put_Line(PP'Image);
+   --     --Put_Line(Dias'Range_Length'Image);
+   --     Dia := Get_Discrete("Ingrese un dia");
+   --     Otro_Dia := Get_Discrete("Ingrese otro dia");
+   --
+   --     Show_V(Dia);
+   --
+   --     Swap_Dias(Dia, Otro_Dia);
+   --     Put_Line("Los dias Intercambiados son "
+   --              & To_String(Dia)
+   --              & " y "
+   --              & To_String(Otro_Dia));
+   --
+   --
+   --
+   --  end;
+
+
+   --Instancar y usar el Show_Vertical pero para un Integer
    declare
-      type Dias is (Lunes,Martes,Miercoles,Jueves,Viernes,Sabado,Domingo);
+      use Utils;
+      procedure Show_Vertical_Integer is new Show_Vertical
+        (T => Integer,
+         To_String => Integer'Image);
 
-      package Dias_IO is new Generic_IO (Tipo => Dias);
-      use Dias_IO;
-
-      Dia: Dias;
+      N : Integer := 1234;
    begin
-      Dia := Get_Discrete("Ingrese un dia");
-      Put_Line(Dia'Image);
-
-
+      Show_Vertical_Integer(N);
    end;
+
 
 
    null;
