@@ -7,44 +7,44 @@ with Utils;
 procedure Main is
 begin
 
-   declare
-                                   --Index-Type
-      type Arreglo_Entero is array (Positive range <>) of Integer;
-                                                          --Element_Type
-      --al Instanciarlo tengo que definir el size
-
-      package Integer_Array_List is new Ada.Containers.Vectors
-        (Element_Type => Integer,
-         Index_Type => Positive);
-      use Integer_Array_List;
-
-      Arreglo : Arreglo_Entero(1..3); --Defino el Size
-      Lista : Integer_Array_List.Vector := Empty;     --Es Dinamica, el size va variando
-      --Es lo mismo que hacer Lista:Vector;
-
-   begin
-
-      --  Insert code here.
-      --- LLeno el arreglo con 3 elementos
-      Arreglo(1) := 32;
-      Arreglo(2) := 33;
-      Arreglo(3) := 50;
-      --Ejemplo de invocar un metodo especificando el paquete donde esta
-      Ada.Text_IO.Put_Line("El contenido del arreglo estatico es");
-      for Valor of Arreglo loop
-         Put_Line(Valor'Image);
-      end loop;
-
-
-      --Lleno la lista con 3 elementos
-      Append(Lista, 32);
-      Append(Lista, 33);
-      Append(Lista, 50);
-      Put_Line("El contenido de la lista dinamica es");
-      for Valor of Lista loop
-         Put_Line(Valor'Image);
-      end loop;
-   end;
+   --  declare
+   --                                  --Index-Type
+   --     type Arreglo_Entero is array (Positive range <>) of Integer;
+   --                                                         --Element_Type
+   --     --al Instanciarlo tengo que definir el size
+   --
+   --     package Integer_Array_List is new Ada.Containers.Vectors
+   --       (Element_Type => Integer,
+   --        Index_Type => Positive);
+   --     use Integer_Array_List;
+   --
+   --     Arreglo : Arreglo_Entero(1..3); --Defino el Size
+   --     Lista : Integer_Array_List.Vector;     --Es Dinamica, el size va variando
+   --     --Es lo mismo que hacer Lista:Vector;
+   --
+   --  begin
+   --
+   --     --  Insert code here.
+   --     --- LLeno el arreglo con 3 elementos
+   --     Arreglo(1) := 32;
+   --     Arreglo(2) := 33;
+   --     Arreglo(3) := 50;
+   --     --Ejemplo de invocar un metodo especificando el paquete donde esta
+   --     Ada.Text_IO.Put_Line("El contenido del arreglo estatico es");
+   --     for Valor of Arreglo loop
+   --        Put_Line(Valor'Image);
+   --     end loop;
+   --
+   --
+   --     --Lleno la lista con 3 elementos
+   --     Append(Lista, 32);
+   --     Append(Lista, 33);
+   --     Append(Lista, 50);
+   --     Put_Line("El contenido de la lista dinamica es");
+   --     for Valor of Lista loop
+   --        Put_Line(Valor'Image);
+   --     end loop;
+   --  end;
 
    --  declare
    --     --Generar una lista dinamica (Vector o contenedor) de notas
