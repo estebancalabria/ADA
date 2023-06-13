@@ -22,6 +22,12 @@ procedure Main is
    end Es_Numerico;
 
 begin
+  Put_Line("Ingrese Su Nombre");
+  declare
+     S : String := Get_Line;
+  begin
+    Put_Line("Hola " & S);
+  end;
    --if (Es_Numerico("123")) then Put_Line("123 es numerico"); end if;
    --if (not Es_Numerico("abc")) then Put_Line("abc no es numerico"); end if;
 

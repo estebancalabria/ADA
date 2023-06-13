@@ -4,7 +4,7 @@ with Ada.Text_IO; use Ada.Text_IO;
 package Selva is
 
    type Clase_Animal is abstract tagged private;
-   type Animal is access Clase_Animal'Class; 
+   type Animal is access all Clase_Animal'Class; 
    --El 'Class sirve para que el access apunte a objetos de subclases
       
    --constructores (Animal es una clase abstracta)

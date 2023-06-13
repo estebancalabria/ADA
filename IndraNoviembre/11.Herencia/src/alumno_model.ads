@@ -8,7 +8,7 @@ package Alumno_Model is
    type Promedio_Notas is new Float range 0.0..10.0 with Default_Value => 0.0;
 
    type C_Alumno is new C_Persona with private;
-   type Alumno is access C_Alumno;
+   type Alumno is access all C_Alumno'Class;
    
    function Create(Nombre:String) return Alumno;
    overriding function To_String(This: in C_Alumno) return String;
