@@ -15,6 +15,7 @@ procedure Main is
    function Es_Numerico(N:String) return Boolean is
       Num : Integer;
    begin
+      Integer'
       Num := Integer'Value(N);
       return True;
    exception
