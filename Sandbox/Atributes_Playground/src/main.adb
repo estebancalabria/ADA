@@ -7,6 +7,7 @@ procedure Main is
 
    --for Integer'Size use 64;
 
+
    type Metros is new Integer;
    type Millas is new Integer;
 
@@ -20,12 +21,23 @@ procedure Main is
       return A & B'Image & " Metros";
    end;
 
+function Leer_Integer_or_0 return Integer is
+begin
+   declare
+      Res: Integer := Integer'Value(Get_Line);
+   begin
+      return Res;
+   exception
+       when others => return 0;
+   end;
+end;
 
 
    N : Integer;
    M : Metros := 5;
    Mi : Millas := 6;
 begin
+   N:= Leer_Integer_or_0;
    N := Integer'Last;
    --Put_Line(M'Tag);
    Put_Line(N'Image);
