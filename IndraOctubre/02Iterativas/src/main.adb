@@ -47,6 +47,7 @@ begin
       Sumatoria : Integer := 0;
       Valor_Ingresado : Integer;
       Promedio : Float;
+      R :Real;
    begin
       --Promedio := Float(Sumatoria); --Deberia hacer un casteo
       Put_Line("Ingrese 10 valores");

@@ -90,12 +90,20 @@ begin
       type Entre_1_y_0 is new Float range 0.0..1.0;
 
       --Cantidad de Digitos
-      type Cuatro_Digitos is digits 4;
+      type Cuatro_Digitos is digits 4; --Digitos despues de la coma
       type Cinco_Digitos is digits 5;
       type Muchos_Digitos is digits 18;
 
       --Cantidad de Digitos y espacio entre dos numeros
-      type Numero_Flotante is delta 0.01 digits 3;
+      type Numero_Flotante is delta 0.01 digits 3; --Ditiros en total
+
+      type T3_D3 is delta 0.001 digits 3;
+      --Va de -0.999 a 0.999
+      type T3_D6 is delta 0.001 digits 6;
+      --Va de -999.999 a 999.999
+      type T2_D3 is delta 0.01 digits 3;
+      --Va de -9.99 a 9.99
+
 
       --F : Float := 1.0;
       N : Entre_1_y_0 := 0.2;
@@ -117,7 +125,7 @@ begin
       --Put_Line(D5'Size'Image);
       --Put_Line(Muchos'Size'Image);
 
-      NF := 10.0;
+      NF := 1.0;
       Put_Line(NF'Image);
       NF := NF + 0.01;
       Put_Line(NF'Image);

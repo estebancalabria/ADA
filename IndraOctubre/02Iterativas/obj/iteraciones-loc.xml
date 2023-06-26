@@ -2,13 +2,665 @@
 <Locations >
   <Project>
     <vfs_file />
-    <file_marker column=" 1" line=" 66" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_project />
-      <vfs_file>C:\Cursos\ADA\IndraOctubre\01HolaMundo\src\main.adb</vfs_file>
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 6" line=" 60" >
+    <file_marker column=" 25" line=" 21" >
       <vfs_project />
-      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-tiinio.ads</vfs_file>
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 13" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 6" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 113" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 14" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 31" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 113" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 8" line=" 132" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 33" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 15" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 113" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 28" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 26" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 31" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 26" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 31" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 26" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 32" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 64" line=" 24" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 44" line=" 15" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 55" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 59" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 46" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 43" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 48" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 49" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 133" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 46" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 133" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 27" line=" 49" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 26" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 35" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 48" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 35" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 90" line=" 100" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 96" line=" 99" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 59" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 96" line=" 99" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 58" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 96" line=" 99" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 55" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 52" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 44" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 59" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 49" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 59" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 59" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 44" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 59" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 59" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 44" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 100" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 44" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 37" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 44" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 53" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 59" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 55" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 48" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 59" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 60" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 59" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 69" line=" 102" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 84" line=" 103" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 82" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 52" line=" 95" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 82" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 8" line=" 116" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 115" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 82" >
+      <vfs_project />
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-tiflio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 83" >
+      <vfs_project />
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-tiflio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 44" >
+      <vfs_project />
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-tiflio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 115" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 82" >
+      <vfs_project />
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-tiflio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 117" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 117" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 8" line=" 115" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 82" >
+      <vfs_project />
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-tiflio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 86" >
+      <vfs_project />
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-tiflio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 50" >
+      <vfs_project />
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-tiflio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 49" line=" 112" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 89" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 31" line=" 112" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 27" line=" 110" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 2" line=" 107" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 2" line=" 107" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 80" line=" 128" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 126" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 125" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 126" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 27" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 3" line=" 37" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 28" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 11" line=" 24" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 31" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 24" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 31" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 25" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 11" line=" 31" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 23" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 25" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 23" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 11" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 23" line=" 10" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 33" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 31" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 34" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 31" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 66" line=" 17" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 23" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 17" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 23" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 78" line=" 36" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 31" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 35" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 31" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 85" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 57" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 85" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 42" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 85" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 11" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 23" line=" 10" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 11" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 28" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 45" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 49" line=" 43" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 65" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 56" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 58" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 47" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 58" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 84" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 55" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 47" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 69" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 81" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 80" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 61" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 80" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 57" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 66" line=" 52" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 57" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 42" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 117" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 23" line=" 90" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 109" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 118" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 110" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 119" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 121" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 118" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 134" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 49" line=" 98" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 128" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 132" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 128" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 50" line=" 98" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 132" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 128" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 24" line=" 49" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\02Iterativas\src\main.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>
