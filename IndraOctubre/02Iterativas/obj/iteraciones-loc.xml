@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Locations >
   <Project>
-    <vfs_file />
+    <vfs_file>C:\Cursos\ADA\IndraOctubre\02Iterativas\iteraciones.gpr</vfs_file>
     <file_marker column=" 1" line=" 1" >
       <vfs_project />
       <vfs_file>C:\Cursos\ADA\IndraJunio2023\05_Estructuras_De_Control\src\main.adb</vfs_file>
@@ -658,9 +658,17 @@
       <vfs_project />
       <vfs_file>C:\Cursos\ADA\IndraJunio2023\06_Tipos_De_Datos\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 24" line=" 49" >
-      <vfs_project />
+    <file_marker column=" 24" line=" 49" >
+      <vfs_project>C:\Cursos\ADA\IndraOctubre\02Iterativas\iteraciones.gpr</vfs_project>
       <vfs_file>C:\Cursos\ADA\IndraOctubre\02Iterativas\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Cursos\ADA\IndraOctubre\03Iterativas\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 9" line=" 86" >
+      <vfs_project />
+      <vfs_file>C:\Coding\GNAT\lib\gcc\x86_64-w64-mingw32\10.3.1\adainclude\a-tiflio.ads</vfs_file>
     </file_marker>
   </Project>
 </Locations>

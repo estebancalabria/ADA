@@ -1,9 +1,11 @@
 with Ada.Text_IO;use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
+with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 
 procedure Main is
+   type T is delta 0.001 digits 5;
    MAX_SUMATORIA :constant Integer := 10;
-
+   V: T := 23.322;
 begin
    --  Ejemplo 1. Calcular la sumatoria de numeros de 1 a 10
    --  declare
@@ -128,5 +130,7 @@ begin
       end loop;
 
    end;
+
+
 
 end Main;
