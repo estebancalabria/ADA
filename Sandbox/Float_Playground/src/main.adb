@@ -5,7 +5,9 @@ with Ada.Long_Long_Float_Text_IO; use Ada.Long_Long_Float_Text_IO;
 procedure Main is
    type D12 is digits 5;
    V : D12 := 0.0;
+   B : Boolean;
 begin
+   B := 1 in Integer;
    Put(Long_Long_Float(D12'First), Exp => 0 );
    New_Line;
    Put_Line(V'Size'Image);

@@ -46,27 +46,154 @@ begin
    --Determinar un numero al azar entre 1 y MAX (Definido como constante)
    --Que el usuario ingrese un numero
    --Decirle si el numero ingreso es mayor, menor o igual al numero al azar
+   --  declare
+   --     MAX : constant := 20.0;
+   --     Seed : Generator;
+   --     Numero_Al_Azar : Integer;
+   --     Valor_Al_Azar : Uniformly_Distributed;
+   --     Valor : Integer;
+   --  begin
+   --     Reset(Seed);
+   --     Valor_Al_Azar := Random(Seed);
+   --     --Numero_Al_Azar := Integer(Valor_Al_Azar * MAX); --  0..Max
+   --     --Numero_Al_Azar := Integer(Valor_Al_Azar * (MAX) + 1; -- 1..Max+1
+   --     Numero_Al_Azar := Integer(Valor_Al_Azar * (MAX - 1.0) + 1.0) ; -- 1..Max
+   --     Put_Line("Introduzca un numero entre 1 y " & Max'Image);
+   --     Valor := Integer'Value(Get_Line); --Mejor con prompt
+   --     if Numero_Al_Azar>Valor then
+   --        Put_Line("El valor introducido es menor ");
+   --     elsif Numero_Al_Azar<Valor then
+   --        Put_Line("El valor introducido es mayor ");
+   --     else
+   --        Put_Line("El valor es igual");
+   --     end if;
+   --     Put_Line(Numero_Al_Azar'Image);
+   --  end;
+
+   --  declare
+   --     --Programar el juego de adivinar el numero
+   --     Max_Oportunidades : constant := 5;
+   --     Max_Valor : constant := 100;
+   --
+   --     subtype Entre_1_Y_Max is Integer range 1..Max_Valor;
+   --
+   --     Seed : Generator;
+   --     Numero_Al_Azar : Entre_1_Y_Max;
+   --     Numero_Adivinado : Entre_1_Y_Max;
+   --     Oportunidad_Actual : Integer := 1;
+   --     Victoria : Boolean := False;
+   --  begin
+   --     Reset(Seed);
+   --                                                          --Max_Valor - 1
+   --     Numero_Al_Azar := Entre_1_Y_Max(Random(Seed) * Float(Max_Valor-1) + 1.0);
+   --
+   --     Put_Line("Adivina el numero secreto entre"
+   --              & Entre_1_Y_Max'First'Image
+   --              &" Y "
+   --              & Entre_1_Y_Max'Last'Image);
+   --     loop
+   --        begin
+   --           Put_Line("Oportunidad" & Oportunidad_Actual'Image & " de " & Max_Oportunidades'Image);
+   --           Oportunidad_Actual := Oportunidad_Actual+1;
+   --
+   --           Numero_Adivinado := Entre_1_Y_Max'Value(Get_Line);
+   --           Victoria := Numero_Adivinado = Numero_Al_Azar;   --Asigno una expresion a una variable booleana
+   --           exit when Victoria;  --es lo mismo exit when Victoria=True;
+   --
+   --           Put_Line("El numero ingresado es " &
+   --                    (if (Numero_Adivinado>Numero_Al_Azar) then "mayor" else "menor") &
+   --                     " al mumero secreto");
+   --
+   --           exit when (Oportunidad_Actual>Max_Oportunidades);
+   --        exception
+   --           when others => Put_Line("Ingresaste mal, perdiste una oportunidad");
+   --        end;
+   --     end loop;
+   --
+   --     Put_Line(if Victoria then "Ganaste" else ("Perdiste, el numero era" & Numero_Al_Azar'Image));
+   --  end;
+   --
+
+   --  for I in Positive loop
+   --     Put_Line(I'Image);
+   --  end loop;
+
    declare
-      MAX : constant := 20.0;
-      Seed : Generator;
-      Numero_Al_Azar : Integer;
-      Valor_Al_Azar : Uniformly_Distributed;
-      Valor : Integer;
+      type Dias_Semana is (Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo);
+
+      subtype Dias_Laborales is Dias_Semana range Lunes..Viernes;
+      type Dias_To_String is array (Dias_Semana) of String(1..3);
+
+      In_English:Dias_To_String := ("Mon","Tue","Wed","Thu","Fri","Sat","Sun");
    begin
-      Reset(Seed);
-      Valor_Al_Azar := Random(Seed);
-      --Numero_Al_Azar := Integer(Valor_Al_Azar * MAX); --  0..Max
-      --Numero_Al_Azar := Integer(Valor_Al_Azar * (MAX) + 1; -- 1..Max+1
-      Numero_Al_Azar := Integer(Valor_Al_Azar * (MAX - 1.0) + 1.0) ; -- 1..Max
-      Put_Line("Introduzca un numero entre 1 y " & Max'Image);
-      Valor := Integer'Value(Get_Line);
-      if Numero_Al_Azar>Valor then
-         Put_Line("El valor introducido es menor ");
-      elsif Numero_Al_Azar<Valor then
-         Put_Line("El valor introducido es mayor ");
-      else
-         Put_Line("El valor es igual");
-      end if;
-      Put_Line(Numero_Al_Azar'Image);
+      --  for Dia in Dias_Semana loop
+      --     Put_Line(Dia'Image & " - " & In_English(Dia));
+      --  end loop;
+      --
+      --  for Dia of In_English loop --Un for sobre el tipo Array
+      --     Put_Line(Dia);
+      --  end loop;
+
+      for Dia in Dias_Semana loop
+         --Horrible 1:
+         --  if Dia = Lunes then
+         --        Put_Line(Dia'Image & " es dia de Semana");
+         --  end if;
+         --  if Dia = Martes then
+         --        Put_Line(Dia'Image & " es dia de Semana");
+         --  end if;
+         --  if Dia = Miercoles then
+         --        Put_Line(Dia'Image & " es dia de Semana");
+         --  end if;
+         --  if Dia = Jueves then
+         --        Put_Line(Dia'Image & " es dia de Semana");
+         --  end if;
+         --  if Dia = Viernes then
+         --        Put_Line(Dia'Image & " es dia de Semana");
+         --  end if;
+         --  if Dia = Sabado then
+         --        Put_Line(Dia'Image & " es fin de Semana");
+         --  end if;
+         --  if Dia = Domingo then
+         --        Put_Line(Dia'Image & " es fin de Semana");
+         --  end if;
+
+         --Menos horrible pero sigue feo
+         --  case Dia is
+         --     when Lunes => Put_Line(Dia'Image & " es dia de Semana");
+         --     when Martes => Put_Line(Dia'Image & " es dia de Semana");
+         --     when Miercoles => Put_Line(Dia'Image & " es dia de Semana");
+         --     when Jueves => Put_Line(Dia'Image & " es dia de Semana");
+         --     when Viernes => Put_Line(Dia'Image & " es dia de Semana");
+         --     when others => Put_Line(Dia'Image & " es fin de Semana");
+         --  end case;
+
+         --
+         --  if Dia in Lunes..Viernes then
+         --     Put_Line(Dia'Image & " es dia de Semana");
+         --  else
+         --    Put_Line(Dia'Image & " es fin de Semana");
+         --  end if;
+
+         --  Put_Line(Dia'Image & (if Dia in Lunes..Viernes then " es dia de Semana" else " es fin de Semana"));
+         --
+         --  if Dia in Dias_Laborales then
+         --     Put_Line(Dia'Image & " es dia de Semana");
+         --  else
+         --    Put_Line(Dia'Image & " es fin de Semana");
+         --  end if;
+         --
+         --  Put_Line(Dia'Image & (if Dia in Dias_Laborales then " es dia de Semana" else " es fin de Semana"));
+
+         --Choice Operator
+         if Dia in Martes|Viernes|Domingo then
+            Put_Line(Dia'Image & " es un buen dia");
+         else
+            Put_Line(Dia'Image & " es un dia que no me gusta");
+         end if;
+
+      end loop;
    end;
+
+
 end Main;
