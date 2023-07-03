@@ -1,6 +1,6 @@
 with Ada.Text_IO; use Ada.Text_IO;
 
-package io is
+package IO is
 
    function Get_Non_Empty_Line
       (Prompt:String := "Ingrese un texto no vacio";
