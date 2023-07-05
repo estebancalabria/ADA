@@ -2,6 +2,7 @@ with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Strings.Fixed; use Ada.Strings.Fixed;
 with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 with Secreto; use Secreto;
+with Juego_De_Rol; use Juego_De_Rol;
 
 procedure Main is
    --   S : Valor_Secreto := 43; La asignacion no funciona porque es un tipo Limited
@@ -47,25 +48,40 @@ begin
    --     Put_Line(NickName);
    --  end;
 
+   --  declare
+   --     type Persona is record
+   --        Nombre : Unbounded_String;
+   --        Apellido : Unbounded_String;
+   --        NickName : Unbounded_String;
+   --     end record;
+   --
+   --     Cliente : Persona;
+   --  begin
+   --     Cliente.Nombre :=  Prompt("Ingrese su Nombre");
+   --     Cliente.Apellido :=  Prompt("Ingrese su Apellido");
+   --     Cliente.NickName := Prompt("Ingrese su Nombre");
+   --
+   --     Put_Line(Cliente.Nombre);
+   --     Put_Line(Cliente.Apellido);
+   --     Put_Line(Cliente.NickName);
+   --  end;
+   --
+
    declare
-      type Persona is record
-         Nombre : Unbounded_String;
-         Apellido : Unbounded_String;
-         NickName : Unbounded_String;
-      end record;
-
-      Cliente : Persona;
+      Ryu: Jugador := Crear(Initial_Hp => 100, Initial_Fuerza => 10);
+      Ken: Jugador := Crear(Initial_Hp => 110, Initial_Fuerza => 9);
    begin
-      Cliente.Nombre :=  Prompt("Ingrese su Nombre");
-      Cliente.Apellido :=  Prompt("Ingrese su Apellido");
-      Cliente.NickName := Prompt("Ingrese su Nombre");
+      --Ken := Crear(Initial_Hp => 110, Initial_Fuerza => 9); --Limited Private me restrinje esto
+      --Ryu := Ken; --Limited Private me restrinje la copia
+      while (Esta_Vivo(Ryu) and Esta_Vivo(Ken)) loop
+         Put_Line("Ryu : Hadouuuuuuuuuuuuuuuuuuuken");
+         Ataque(Ryu,Ken);
+         Put_Line("Ken : Hadouuuuuuuuuuuuuuuken");
+         Ataque(Ken,Ryu);
+      end loop;
 
-      Put_Line(Cliente.Nombre);
-      Put_Line(Cliente.Apellido);
-      Put_Line(Cliente.NickName);
+      Put_Line("El Ganador es " & (if Esta_Vivo(Ryu) then "Ryu!" else "Ken!"));
    end;
-
-
 
 
 end Main;
