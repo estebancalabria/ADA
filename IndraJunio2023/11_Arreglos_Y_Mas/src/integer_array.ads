@@ -17,5 +17,6 @@ package Integer_Array is
    function Agregar(Valor:integer; Arreglo:Conjunto_De_Numeros) return Conjunto_De_Numeros;
 --   procedure Add(Valor:integer; Arreglo:in out Numeros);
 private
-   type Conjunto_De_Numeros is array (Integer range <>) of Integer with Default_Component_Value => 10;
+   --type Conjunto_De_Numeros is array (Integer range <>) of Integer with Default_Component_Value => 10;
+   type Conjunto_De_Numeros is array (1..10) of Integer with Default_Component_Value => 10;
 end Integer_Array;
