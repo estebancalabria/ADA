@@ -33,8 +33,26 @@ procedure Main is
       Put_Line(To_String(Mensaje));
    end Put_Line;
 
+   --type T_AlphaNumericCharacter is Character with Static_Predicate => T_AlphaNumericCharacter in 'a'..'b' | 'A'..'Z' | '0'..'9';
+   subtype T_AlphanumericCharacter is Character
+     with Static_Predicate => T_AlphaNumericCharacter in 'a'..'b' | 'A'..'Z' | '0'..'9';
+   subtype T_UppercaseAlphabeticCharacter is T_AlphanumericCharacter range 'A'..'Z';
+   subtype T_LowecaseAlphabeticCharacter is T_AlphanumericCharacter range 'a'..'z';
+   subtype T_NumericAlphabeticCharacter is T_AlphanumericCharacter range '0'..'9';
+
+   --type String is array (Positive) of Character; Asi se define string en ADA
+   type T_AlphanumericString is array (Positive range <>) of T_AlphanumericCharacter;
+   type T_UppercaseAlphabeticString is array (Positive range <>) of T_UppercaseAlphabeticCharacter;
+
+   J : T_UppercaseAlphabeticString := "HOLA";
 
 begin
+
+   for C in T_AlphaNumericCharacter loop
+      Put(C'Image);
+   end loop;
+   New_Line;
+
    -- Put_Line("Vamos a ver los tipos Limited");
    -- Set_Valor_Secreto(S, 44); --Solo lo puedo hacer mediante sus metodos
    --S:= S+2; No puedo modificar la variable con la suma
