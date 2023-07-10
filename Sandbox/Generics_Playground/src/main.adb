@@ -46,8 +46,6 @@ procedure Main is
    function Prompt is new Generic_Scalar_Prompt(T => Integer, Convert => Integer'Value);
    function Prompt is new Generic_Scalar_Prompt(T => Float, Convert => Float'Value);
 
-   type Metros is tagged Integer;
-
    N1 : Integer := 2;
    N2 : Integer := 4;
 
