@@ -3,6 +3,7 @@ with Juego; use Juego;
 with Utils; use Utils;
 
 procedure Main is
+
    --  type Punto is record
    --        X: Integer;
    --        Y: Integer;
@@ -114,10 +115,6 @@ begin
       --        end;
       --     end loop;
       --  end P_PROMPT_HP;
-
-
-
-
 
       function Prompt_Clase is new Generic_Prompt(T=>Clase);
       function Prompt_Fuerza is new Generic_Prompt(T=>Fuerza);
