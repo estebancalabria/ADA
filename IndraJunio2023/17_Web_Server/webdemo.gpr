@@ -1,0 +1,16 @@
+
+with "aws";
+
+project Webdemo is
+
+   for Source_Dirs use ("src");
+   for Object_Dir use "obj";
+   for Exec_Dir use ".";
+
+   for Main use ("webdemo-main.adb");
+
+   package Builder is
+      for Executable ("webdemo-main.adb") use "webdemo";
+   end Builder;
+
+end Webdemo;
