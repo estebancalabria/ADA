@@ -188,7 +188,7 @@ begin
       end if;
 
       Put("Su Edad es:");
-      Put(Edad,0);
+      Put(Edad,0); --Con esta sobrecarga controlo los espacios antes del numero
 
 
    exception
