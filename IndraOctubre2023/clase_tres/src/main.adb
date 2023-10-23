@@ -305,8 +305,8 @@ begin
 
       type T_Money is digits 2; --Me asegura trabajar con 2
 
-      type T_Money_2 is delta 0.5 is digits 2;
-      --type T_Money_2 is delta 0.005 is digits 2 --No anda
+      type T_Money_2 is delta 0.1 digits 1;
+      --type T_Money_2 is delta 10.0** (-3) digits 6; --No anda
 
       V_Saldo : T_Money;
       V_Saldo_2 : T_Money_2;
@@ -317,13 +317,12 @@ begin
       V_Saldo := V_Saldo + 0.000000001;
       Put(Float(V_Saldo), Exp => 0);
 
-      V_Saldo_2 :=10.43545478;
+      New_Line;
+      V_Saldo_2 := 1.1;
       Put(Float(V_Saldo_2), Exp => 0); --al castear lo convierte de punto fijo a punto Flotante
       New_Line;
       V_Saldo := V_Saldo + 0.000000001;
       Put(Float(V_Saldo_2), Exp => 0);
-
-
    end;
 
 
