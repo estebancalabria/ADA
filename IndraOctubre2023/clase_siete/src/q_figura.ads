@@ -23,9 +23,10 @@ package Q_Figura is
    --   R_Altura : Natural;
    -- end record;
    
-   --type T_Tagged_Figura is tagged private;
+   type T_Tagged_Figura is tagged private;
+   --Tambien tengo todas estas opciones 
    --type T_Tagged_Figura is tagged limited private;
-   type T_Tagged_Figura (<>) is tagged private;
+   --type T_Tagged_Figura (<>) is tagged private;
    --type T_Tagged_Figura (<>) is tagged limited private;
    
    function F_Crear_Figura(V_Base:Natural; V_Altura:Natural) return T_Tagged_Figura;

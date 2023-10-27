@@ -1,0 +1,65 @@
+procedure main_ejericio_1 is
+ 
+
+   type T_Metros_Por_Segundo is new Positive;
+   
+   procedure P_Swap is new P_Generic_Swap (T => Integer);
+   
+   --procedure P_Swap(V_Valor_1 : in out Integer; V_Valor_2 : in out Integer) is
+   --   V_Aux : Integer := V_Valor_1;
+   --begin
+   --   V_Valor_1 := V_Valor_2;
+   --   V_Valor_2 := V_Aux;
+   --end;
+   
+   procedure P_Swap is new P_Generic_Swap (T => Float);
+   
+   --procedure P_Swap(V_Valor_1 : in out Float; V_Valor_2 : in out Float) is
+   --   V_Aux : Float := V_Valor_1;
+   --begin
+   --   V_Valor_1 := V_Valor_2;
+   --   V_Valor_2 := V_Aux;
+   --end;
+   
+   --OJO: Solo funciona si tienen la misma longidud, sino CONSTRAINT_ERROR
+   procedure P_Swap is new P_Generic_Swap (T => String); --No funciona porque String no es definitive (Los string requieren inicializacion)
+   --procedure P_Swap(V_Valor_1 : in out String; V_Valor_2 : in out String) is
+   --   V_Aux : String := V_Valor_1;
+   --begin
+   --   V_Valor_1 := V_Valor_2;
+   --   V_Valor_2 := V_Aux;
+   --end;
+   
+   procedure P_Swap is new P_Generic_Swap (T => T_Metros_Por_Segundo);
+   --procedure P_Swap(V_Valor_1 : in out  T_Metros_Por_Segundo; V_Valor_2 : in out  T_Metros_Por_Segundo) is
+   --   V_Aux :  T_Metros_Por_Segundo := V_Valor_1;
+   --begin
+   --   V_Valor_1 := V_Valor_2;
+   --   V_Valor_2 := V_Aux;
+   --end;   
+   
+   V_A : Integer := 10;         --El integer es un tipo no que requiere inicializacion
+   V_B : Integer := 20;
+   
+   V_Float_A : Float := 10.0;         
+   V_Float_B : Float := 20.0;
+
+   
+   V_S1 : String := "Hola";     --El String es un tipo que requiere inicializacion
+   V_S2 : String := "Chau";
+   --V_S2 : String := "Adios";   --Esto asi no funciona por un tema de longitudes
+begin
+   Put_Line(V_A'Image & "  " & V_B'Image);
+   P_Swap(V_A,V_B); -- en python podemos hacer (A,B) = (B,A)
+   Put_Line(V_A'Image & "  " & V_B'Image);
+   
+   Put_Line(V_S1 & " " & V_S2);
+   P_Swap(V_S1, V_S2);  --Solo si tienen el mismo size
+   Put_Line(V_S1 & " " & V_S2);
+   
+   Put(V_Float_A, Exp=>0); Put(" "); Put(V_Float_B, Exp=>0); New_Line;
+   P_Swap(V_Float_A, V_Float_B);
+   Put(V_Float_A, Exp=>0); Put(" "); Put(V_Float_B, Exp=>0); New_Line;
+   
+   
+end Main;
