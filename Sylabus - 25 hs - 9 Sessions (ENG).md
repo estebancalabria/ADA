@@ -6,7 +6,8 @@
 - Writing your first **Hello World** program  
 - **Primitive data types**: `Integer`, `Float`, `Boolean`, `Character`  
 - **Constants** and immutability  
-- **Type attributes**: `'First`, `'Last`, `'Size`, `'Image`, `'Value`, etc.  
+- **Type attributes**: `'First`, `'Last`, `'Size`, `'Image`, `'Value`, etc.
+- Ranges 
 - Introduction to **subprograms**: procedures and functions  
 - Parameter modes: `in`, `out`, `in out`  
 - Return values and type consistency  
