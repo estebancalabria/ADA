@@ -7,6 +7,7 @@
 - **Primitive data types**: `Integer`, `Float`, `Boolean`, `Character`  
 - **Constants** and immutability  
 - **Type attributes**: `'First`, `'Last`, `'Size`, `'Image`, `'Value`, etc.
+- Enum
 - Ranges 
 - Introduction to **subprograms**: procedures and functions  
 - Parameter modes: `in`, `out`, `in out`  
