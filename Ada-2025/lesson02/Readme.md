@@ -88,4 +88,20 @@
    end;
 ```
 
-```
+**Sample 5 - Integer to Float Conversion**
+
+```ADA
+   declare
+      X : Float := 0.0;
+      I : Integer := 0;
+   begin
+      --Implicit Conversions are not Allowed in ADA
+      --X := I;
+      
+      X := Float(I);
+      Put("The Value of X is ");
+      Put(X, Fore => 1, Aft => 10, Exp => 0);
+      New_Line;  
+   end;
+```   
+
