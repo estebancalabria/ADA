@@ -174,3 +174,24 @@
       Put_Line ("Now X is" & X'Image);
    end;
 ```
+
+**Sample 10 - Named Parameters**
+```ADA
+   declare
+
+      procedure Draw_Rectangle
+        (Width : Positive; Height : Positive; FillWith : Character := '*')
+      is
+      begin
+         for Row in 1 .. Width loop
+            for Col in 1 .. Height loop
+               Put (FillWith);
+            end loop;
+            New_Line;
+         end loop;
+      end Draw_Rectangle;
+
+   begin
+      Draw_Rectangle (Height => 8, Width => 6);
+   end;
+```
