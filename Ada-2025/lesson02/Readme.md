@@ -154,3 +154,23 @@
       Put_Line("The Value of I after de Conversion is " & I'Image);
    end;
 ```
+
+**Sample 9 - Default parameters**
+```ADA
+   declare
+      function Incrent_by
+        (Value : Integer; Increment : Integer := 1) return Integer
+      is
+      begin
+         return Value + Increment;
+      end Incrent_by;
+      
+      X : Integer := 1;
+   begin
+      Put_Line ("X is" & X'Image);
+      X := Incrent_by (X, 2);
+      Put_Line ("Now X is" & X'Image);
+      X := Incrent_by (X);
+      Put_Line ("Now X is" & X'Image);
+   end;
+```
