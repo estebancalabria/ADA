@@ -104,4 +104,23 @@
       New_Line;  
    end;
 ```   
-
+**Sample 6 - Procedures**
+```ADA
+   declare
+      X : Float := 0.0;
+      I : Integer := 0;
+      
+      procedure Show_Float_In_Human_Readable_Form(Message : String; Number : Float ) is
+      begin
+         Put(Message);
+         Put(Number, Fore => 1, Aft => 10, Exp => 0);
+         New_Line;
+      end Show_Float_In_Human_Readable_Form;
+      
+   begin
+      --Implicit Conversions are not Allowed in ADA
+      --X := I;
+      X := Float(I);
+      Show_Float_In_Human_Readable_Form("The Value of X is " , X);
+   end;
+```
