@@ -63,4 +63,29 @@
       end if;
    end;
 ```
+
+**Sample 5 - Fixec Point Decimal Variables**
+```ADA
+  declare
+      type Money is delta 0.1 digits 10;
+      
+      X : Money := 0.0;
+      I : Integer := 1;
+   begin
+      for I in 1..10 loop
+         X := X + 0.1;
+      end loop;
    
+      Put("The Value of X is");
+      Put(X'Image);
+      New_Line;
+   
+      if X = 1.0 then
+         Put_Line("They Are Equals");
+      else
+         Put_Line("They are not Equals");
+      end if;
+   end;
+```
+
+```
