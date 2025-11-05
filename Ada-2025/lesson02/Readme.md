@@ -195,3 +195,59 @@
       Draw_Rectangle (Height => 8, Width => 6);
    end;
 ```
+
+**Sample 11 - In Out Parameters**
+```ADA
+   declare
+      procedure Swap
+        (First_Value : in out Integer; Second_Value : in out Integer)
+      is
+         Aux : Integer := First_Value;
+      begin
+         First_Value  := Second_Value;
+         Second_Value := Aux;
+      end Swap;
+
+      I : Integer := 2;
+      J : Integer := 3;
+   begin
+      Put_Line ("Number I and J before Swap are " & I'Image & J'Image);
+      Swap (I, J);
+      Put_Line ("Number I and J before Swap are " & I'Image & J'Image);
+   end;
+```
+
+**Sample 11 - Out Parameters and error handling good practice**
+```ADA
+   declare
+      procedure Integer_Division
+            (Dividend : in Integer;
+             Divisor : in Integer;
+             Result : out Integer;
+\            Success : out Boolean) is
+      begin
+         if Divisor = 0 then
+            Success := False;
+            Result := Integer'Last;
+         else
+            Success := True;
+            Result := Dividend / Divisor;
+         end if;
+      end Integer_Division;
+      
+      X : Integer := 4;
+      Y : Integer := 2;
+      Result : Integer := 0;
+      Ok : Boolean := False;
+   begin
+      --This is a good practice, most functions show include an out success
+      --if they can fail
+      Integer_Division(X, Y, Result, Ok);
+      if Ok then 
+         Put_Line(X'Image & " divided by" & Y'Image & " is " & Result'Image);
+      else
+         Put_Line("You cannot divide " & X'Image & " by" & Y'Image);
+      end if;
+      
+   end;
+```
