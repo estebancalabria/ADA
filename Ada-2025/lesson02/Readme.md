@@ -6,6 +6,8 @@
 * Imports (with and use)
 * declarative secctions
 * Exception handling
+* Procedures
+* Operator Overloading
 
 #  Floating Point Types
 
@@ -122,5 +124,33 @@
       --X := I;
       X := Float(I);
       Show_Float_In_Human_Readable_Form("The Value of X is " , X);
+   end;
+```
+
+**Sample 7 - Operator overloading**
+```ADA
+   declare
+      X : constant Float := 5.67;
+      Message : String := "The Number Is";
+      
+      function "&"(Item : String; Number : Float) return String is
+      begin
+         return Item & Number'Image;
+      end;
+      
+   begin
+      Put_Line(Message & X);
+   end;
+```
+
+**Sample 8 - Float To Integer Conversion**
+```ADA
+   declare
+      X : Float := 3.6;
+      I : Integer := 0;
+   begin
+      I := Integer(X);
+      --I := Integer(Float'Rounding(X));
+      Put_Line("The Value of I after de Conversion is " & I'Image);
    end;
 ```
