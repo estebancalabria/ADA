@@ -1,0 +1,25 @@
+V "GNAT Lib v2021"
+A -gnata
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+
+U tipos%b		tipos.adb		2e371b46 NE OO PK
+
+U tipos%s		tipos.ads		be5c77de EE NE OO PK
+
+D system.ads		20210520051136 2ffa5114 system%s
+D tipos.ads		20251029213202 be5c77de tipos%s
+D tipos.adb		20251029213250 906b6c98 tipos%b
+G a e
+G c Z s b [n tipos 11 13 none]
+X 2 tipos.ads
+1K9*Tipos 13l5 13e10 3|1b14 9l5 9t10
+3F9*Duracion<float> 6r20 7r20 8r20 9r20
+6F9*Ms<3F9>
+7F9*S<3F9> 11r22 3|4r22
+8F9*Min<3F9>
+9F9*H<3F9>
+11V13*N{7F9} 3|4b13 7t7
+
