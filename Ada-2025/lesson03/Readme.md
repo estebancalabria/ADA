@@ -147,6 +147,92 @@ New Types usages:
       Put_Line("I Cannot mix pears and apples in the same variable");
    end;
 ```
+
 ---
 
-- ### : Real World Example
+- ### : Real World Example : Distance
+
+Specification
+```ADA
+package distance is
+
+   type Centimeters is new Float;
+   type Meters is new Float;
+   type Kilometers is new Float;
+   
+   --Conversions
+   function To_Meters(Item: Centimeters) return Meters;
+   function To_Meters(Item: Kilometers) return Meters;
+   
+   --ToString
+   function To_String(Item: CentiMeters) return String;
+   function To_String(Item: Meters) return String;
+   function To_String(Item: Kilometers) return String;
+   
+   --Overload operators
+   function "+"(M : Meters ; KM : Kilometers) return Meters;
+
+end distance;
+```
+
+Body with primitives
+```ADA
+package body distance is
+
+      --Conversions
+   function To_Meters(Item: Centimeters) return Meters is
+   begin
+      return Meters(Item / 100.0);
+   end To_Meters;
+   
+   function To_Meters(Item: Kilometers) return Meters is
+   begin
+      return Meters(Item * 1000.0);
+   end To_Meters;
+   
+   --ToString
+   function To_String(Item: CentiMeters) return String is
+   begin
+      return Item'Image & " cm";
+   end;
+   
+   function To_String(Item: Meters) return String is
+   begin
+     return Item'Image & " m";
+   end;
+   
+   function To_String(Item: Kilometers) return String is
+   begin
+     return Item'Image & " km";
+   end;
+   
+   function "+"(M : Meters ; KM : Kilometers) return Meters is
+   begin
+      return M + To_Meters(KM);
+   end;
+   
+
+   
+end distance;
+```
+
+Usage
+```ADA
+   --Sample 3 : Real World example on using new types
+   declare
+      Distance_From_Home : Meters := 1000.0;
+      Distance_From_Usa : Kilometers := 2345.0;
+      Distance_From_Home_In_USA : Meters := 0.0;
+      Random_Float : Float := 5.5;
+   begin
+      --Not allowed at compile time
+      -- Distance_From_Home :=  Distance_From_Usa;
+      
+      --Not allowed at compile time
+      --Distance_From_Usa := Random_Float;
+      
+      --Canot use this for n o
+      Distance_From_Home_In_USA :=  Distance_From_Home + Distance_From_Usa;
+      Put_Line("The distance from my home to USA is "  & To_String(Distance_From_Home_In_USA));
+   end;
+```
