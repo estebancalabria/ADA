@@ -15,7 +15,28 @@
 Packages consisits in two sepparate files
 * ADS : Ada Package Specification Files
 * ADB : Ada Package Body
- 
+
+# Conditional Expresions
+
+* Expresion that returns a Value base on a condition
+* Similar to Ternary expresions in other languages ( a := (b>0)? True : False )
+
+```ADA
+Is_Even := if (A mod 2 = 0) then True else False
+```
+
+We used them here
+
+```ADA
+
+   function To_String(Item : Apples) return String is
+   begin
+      --Similar to ternary operator in other languages
+      return Item'Image & (if (item=1) then " apple" else " apples"); 
+   end;
+
+```
+
 # Ada's Strog type System 
 
 ## Subtype
@@ -236,3 +257,51 @@ Usage
       Put_Line("The distance from my home to USA is "  & To_String(Distance_From_Home_In_USA));
    end;
 ```
+
+## Dynamic and Static Predicates
+
+- ### Dynamic Predicate
+
+```ADA
+   --Sample 4 - Dynamic PRaccates
+   declare
+      --subtype Even_integer is Integer with Dynamic_Predicate => Even_integer mod 2 = 0;
+      type Even_integer is new Integer with Dynamic_Predicate => Even_integer mod 2 = 0;
+      
+      Number : Integer := 2;
+      Even_Number : Even_integer;
+   begin
+      Even_Number := 3; --This fails if we execute the program with special flags
+      
+      if (Even_Number in Even_integer) then
+        Put_Line("Everything is OK");
+      else
+        Put_Line("Variable is Wrong");
+      end if; 
+  end;
+```
+
+- ### Static Predicates
+
+```ADA
+   declare
+      --subtype Even_integer is Integer with Dynamic_Predicate => Even_integer mod 2 = 0;
+      type One_To_Ten is new Integer range 1..10;
+      type One_To_Ten_Even is new One_To_Ten
+        with Static_Predicate => One_To_Ten_Even  in 2|4|6|8|10;
+
+      Number : One_To_Ten_Even :=2;
+   begin
+      Number := 3;
+
+      if (Number in One_To_Ten_Even) then
+        Put_Line("Everything is OK");
+      else
+        Put_Line("Variable is Wrong");
+      end if;
+   end;
+```
+
+# Array
+
+
