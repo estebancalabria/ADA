@@ -304,4 +304,35 @@ Usage
 
 # Array
 
+- ## Array Declaration, intialization and element Acccess
 
+```ADA
+   -- Sample 5 - Arrays
+   declare
+      My_array : Array (1..5) of Integer;
+   begin
+      My_array := (11,22,33,44,55);
+      for I in 1..5 loop
+         Put_Line("Position:" & I'Image & ", Value: " & My_array(I)'Image);
+       end loop;
+   end;
+```
+
+- ## Array declaration with ranges
+
+```ADA
+   declare
+      type My_array_range is range 1..25;
+      --My_array : Array (1..25) of Integer := (others => 0);
+      My_array : Array (My_array_range) of Integer := (others => 0);
+   begin
+      My_array := (11,22,33,44,55, others => 999);
+      
+      --IMPORTANT USE 'First and 'Last to iterate on an Array by Index
+      for I in My_array'First..My_array'Last loop
+         
+         Put_Line("Position:" & I'Image & ", Value: " & My_array(I)'Image);
+         
+       end loop;
+   end;
+```
