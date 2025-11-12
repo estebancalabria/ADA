@@ -78,6 +78,8 @@ end Grades;
 
 # Arrays
 
+## Constained Arrays
+
 **Sample 2 : Storing Grades in an Array**
 ```ADA
      declare
@@ -231,6 +233,39 @@ Sample
 ```
 
 
-# String
+## Unconstrained Arrays
+
+**-- Sample 8 - Unconstrained Arrays**
+```ADA
+   
+   declare
+      Grade_Count : constant Integer := 5;
+      --Constraint error with 5
+      --Max_Grade_Count : constant Integer := 5;
+      Max_Grade_Count : constant Integer := 100;
+      
+      type Grade_Range is range 1..Max_Grade_Count;
+        
+      --I Want to declare and Array type without defining how many elemnts it shoyld hold
+      -- Integer is the maximum range it can hold
+      
+      -- Comment and uncomment the following lines to see how it changes
+      --type Grade_Array is array (Integer range <>) of Grade;
+      --type Grade_Array is array (Positive range <>) of Grade;
+      --type Grade_Array is array (Natural range <>) of Grade;
+      type Grade_Array is array (Grade_Range range <>) of Grade;
+      
+      
+      --Unconstrained arrays require initialization
+      My_Grades : Grade_Array := (10,3,29,28,19,30);
+
+   begin
+      Put_Line("Length " & My_Grades'Length'Image);
+      Put_Line("First " & My_Grades'First'Image);
+      Put_Line("Last " & My_Grades'Last'Image);
+      
+        
+   end;
+```
 
 # Standard Libraries
