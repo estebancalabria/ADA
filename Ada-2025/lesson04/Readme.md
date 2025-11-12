@@ -80,14 +80,14 @@ end Grades;
 
 **Sample 2 : Storing Grades in an Array**
 ```ADA
-   --  declare
-   --     My_Grades : array (1..5) of Grade := (10,20,30,10,28);
-   --  begin
-   --     --for I in 1..5 loop
-   --     for I in My_Grades'Range loop
-   --        Put_Line("My Grade Number " & I'Image & " is " & My_Grades(I)'Image );
-   --     end loop;
-   --  end;
+     declare
+        My_Grades : array (1..5) of Grade := (10,20,30,10,28);
+     begin
+        --for I in 1..5 loop
+        for I in My_Grades'Range loop
+           Put_Line("My Grade Number " & I'Image & " is " & My_Grades(I)'Image );
+        end loop;
+     end;
 ```
 **--Sample 3 : Storing Grades in an Array.**
 ```ADA
