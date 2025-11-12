@@ -1,0 +1,5 @@
+package constats is
+
+   Application_Title : constant String := "Welcome to Lesson 3";
+
+end constats;
