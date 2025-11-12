@@ -89,29 +89,30 @@ end Grades;
    --     end loop;
    --  end;
 ```
-
-   --Sample 3 : Storing Grades in an Array.
+**--Sample 3 : Storing Grades in an Array.**
+```ADA
    --           Making the Code Better
    -- Optimizaition 1 : When using custom data types define To_String printive instead of using 'Image
    -- Optimizaition 2 : When using arrays is a good practice to declare a new type for the array
    -- Optimizaition 3 : Use a Foreach loop
-   --  declare
-   --     Grade_Count : constant Integer := 5;
-   --
-   --     type Grade_Array is array (1..Grade_Count) of Grade;
-   --
-   --     My_Grades : Grade_Array:= (10,20,30,10,28);
-   --  begin
-   --     --for I in 1..5 loop
-   --
-   --     --  for I in My_Grades'Range loop
-   --     --     Put_Line("My Grade Number " & I'Image & " is " & To_String(My_Grades(I)) );
-   --     --  end loop;
-   --
-   --     for G of My_Grades loop
-   --        Put_Line("My Grade is " & To_String(G));
-   --     end loop;
-   --  end;
+     declare
+        Grade_Count : constant Integer := 5;
+   
+        type Grade_Array is array (1..Grade_Count) of Grade;
+   
+        My_Grades : Grade_Array:= (10,20,30,10,28);
+     begin
+        --for I in 1..5 loop
+   
+        --  for I in My_Grades'Range loop
+        --     Put_Line("My Grade Number " & I'Image & " is " & To_String(My_Grades(I)) );
+        --  end loop;
+   
+        for G of My_Grades loop
+           Put_Line("My Grade is " & To_String(G));
+        end loop;
+    end;
+```
 
 **-- Samplw 4 : Using Enums ass array index**
 ```ADA     
@@ -168,6 +169,67 @@ end Grades;
       end loop;
    end;
 ```
+
+**-- Sample 6 : Array Slices**
+```ADA
+   declare
+      Grade_Count : constant Integer := 50;
+
+      type Grade_Array is array (1 .. Grade_Count) of Grade;
+      type Smaller_Grade_Array is array (1..10) of Grade;
+
+      My_Grades : Grade_Array :=
+        (1 .. 10  => 10, 11 .. 20 => 20, 21 .. 30 => 30, 31 .. 40 => 25,
+         41 .. 50 => 12);
+      My_Best_Grades : Smaller_Grade_Array;
+      
+   begin
+      --Asignation not valid. Compile time Error
+      --Arrays should be the same length
+      --My_Best_Grades := My_Grades;
+      
+      Put_Line("My_Grades Size is " & My_Grades'Length'Image);
+      
+      --Array Slicing : usually its not done with contrained arrays
+      --BUT CASTING IS NOT GOOG WE SHOULD AVOID
+      My_Best_Grades := Smaller_Grade_Array(My_Grades(15..24));
+      
+      for G of My_Best_Grades loop
+         Put_Line
+           ("You got " & To_String (G) & " wich is " &
+            Grade_Interpretation (G)'Image);
+      end loop;
+   end;
+```
+
+**- Sample 7 : Enums with my Grade Data Type and Array Slicing**
+
+Add Library at the top
+```ADA
+with Ada.Characters.Handling; use Ada.Characters.Handling;
+```
+
+Sample
+```ADA
+   declare
+      Grade_Count : constant Integer := 5;
+   
+      type Grade_Array is array (1..Grade_Count) of Grade;
+   
+      My_Grades : Grade_Array:= (10,20,30,10,28);
+      
+      function To_Title_Case(S:String) return String is
+      begin
+         return To_Upper(S(S'First)) & To_Lower(S(S'First+1..S'Last) ); 
+      end;
+      
+   begin
+      For G of My_Grades loop
+         Put_Line("You got " & To_String(G) & " wich is " & To_Title_Case(Grade_Interpretation(G)'Image));
+      end loop;
+   end;
+```
+
 
 # String
 
