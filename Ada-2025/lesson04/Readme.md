@@ -52,28 +52,28 @@ package body Grades is
 end Grades;
 ```
 
-   --  --Sample 01: Using our own type
-   --  declare
-   --     Math_Grade : Grade := 10;
-   --     Phisycs_Grade : Grade := 28;
-   --
-   --     --Run Time Error
-   --     --Constraint Error : Grade Cannot be greater than 30
-   --     --Sports_Grade : Grade := 50;
-   --     Just_A_Number : Integer := 6;
-   --  begin
-   --     --Compile Time Error
-   --     --Phisycs_Grade := Just_A_Number;
-   --     if Math_Grade in Grade_Failed then
-   --        Put_Line("You Failed Math");
-   --     end if;
-   --
-   --
-   --    if Phisycs_Grade in Grade_Approved then
-   --        Put_Line("You Passed Physics");
-   --     end if;
-   --  end;
-
+ **--Sample 01: Using our own type**
+ ```ADA
+     declare
+        Math_Grade : Grade := 10;
+        Phisycs_Grade : Grade := 28;
+   
+        --Run Time Error
+        --Constraint Error : Grade Cannot be greater than 30
+        --Sports_Grade : Grade := 50;
+        Just_A_Number : Integer := 6;
+     begin
+        --Compile Time Error
+        --Phisycs_Grade := Just_A_Number;
+        if Math_Grade in Grade_Failed then
+           Put_Line("You Failed Math");
+        end if;
+     
+       if Phisycs_Grade in Grade_Approved then
+           Put_Line("You Passed Physics");
+        end if;
+     end;
+```
 # Mod data Type
 
 # Arrays
