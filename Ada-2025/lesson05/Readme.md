@@ -78,5 +78,49 @@
    end;
 ```
 
+- ## Sample 5 : Reading Fixed LEngth Strings with Get_Line
+
+```ADA
+   --Sample 5 : Reading Fixed LEngth Strings with Get_Line
+   declare
+      subtype String_Length is Natural;
+      Max_String_Length : constant String_Length := 10;
+      
+      subtype Name_String is String(1..Max_String_Length);
+      
+      First_Name : Name_String;
+      First_Name_Length : String_Length;
+      
+      Last_Name : Name_String;
+      Last_Name_Length : String_Length;
+     
+   begin
+      Put_Line("Enter your First Name");
+      
+      --This is not the Best Way to do it in this case
+      --First_Name := Get_Line;  --Error if I enter les than Max_String_Lenth;
+      
+      Get_Line(First_Name, First_Name_Length);
+      if First_Name_Length=Max_String_Length then
+         Skip_Line;
+      end if;
+      
+      Put_Line("Enter your Last Name");
+      Get_Line(Last_Name, Last_Name_Length);
+      if Last_Name_Length=Max_String_Length then    
+         Skip_Line;
+      end if;
+      
+      --Full_Name := First_Name;   --Not Valid
+      --Full_Name :=  First_Name & Last_Name; --Valid
+      declare
+         Full_Name: String := First_Name(1..First_Name_Length) & " "  & Last_Name(1..Last_Name_Length); 
+      begin
+         Put_Line("Hello " & Full_Name);   
+      end; 
+   end;
+
+
+```
 # Unbounded Strings (More similar to strings used in other languages)
 
