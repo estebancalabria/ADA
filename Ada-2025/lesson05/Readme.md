@@ -119,8 +119,72 @@
          Put_Line("Hello " & Full_Name);   
       end; 
    end;
+```
 
+- ## Better Sample
 
+```ada
+   --Sample 6 : Lets Inprove previous example with subprograms
+   declare
+      subtype String_Length is Natural;
+      Max_String_Length : constant String_Length := 10;
+      
+      subtype Name_String is String(1..Max_String_Length);
+      
+      First_Name : Name_String;
+      First_Name_Length : String_Length;
+      
+      Last_Name : Name_String;
+      Last_Name_Length : String_Length;
+      
+      procedure Input(Message:String; Result_String : in out String ; Length : out Natural) is
+      begin
+         Put_Line(Message);
+         
+         Get_Line(Result_String, Length);
+         
+         if First_Name_Length=Result_String'Length then
+            Skip_Line;
+         end if;
+      end;
+         
+   begin
+      Input("Enter your First Name", First_Name, First_Name_Length);
+      Input("Enter your Last Name", Last_Name\, Last_Name_Length);
+      declare
+         Full_Name: String := First_Name(1..First_Name_Length) & " "  & Last_Name(1..Last_Name_Length); 
+      begin
+         Put_Line("Hello " & Full_Name);   
+      end; 
+   end;
 ```
 # Unbounded Strings (More similar to strings used in other languages)
 
+- ## Packages for Unboudned Strings
+
+```ada
+with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
+with Ada.Strings.Unbounded.Text_IO; use Ada.Strings.Unbounded.Text_IO; 
+```
+
+- ## Unbounded String Samples
+
+```
+   -- Sample 7 : Unbounded Strings
+   declare
+      First_Name : Unbounded_String := To_Unbounded_String("Esteban"); --Initialization
+      Last_Name : Unbounded_String;  --Without initialization
+      Full_Name : Unbounded_String;
+   begin
+      Last_Name := To_Unbounded_String("Calabria");
+      
+      --Full_Name := First_Name; --Valid
+      -- Full_Name := Last_Name; --Valid
+      Full_Name := First_Name & " " & Last_Name;
+      
+      --Put_Line(To_String(Full_Name)); Without any extra libraries
+      Put_Line(Full_Name); --OK when I include Ada.Strings.Unbounded.Text_IO;
+      Put_Line("Full Name Length " & Length(Full_Name)'Image);
+      Put_Line("Part of the Full Name  " & To_String(Full_Name)(5..10) );
+   end;
+```   
