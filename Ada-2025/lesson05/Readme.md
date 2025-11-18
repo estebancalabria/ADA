@@ -188,3 +188,91 @@ with Ada.Strings.Unbounded.Text_IO; use Ada.Strings.Unbounded.Text_IO;
       Put_Line("Part of the Full Name  " & To_String(Full_Name)(5..10) );
    end;
 ```   
+
+- ## Unbounded Strings with User Input
+
+```ada
+   declare
+      First_Name : Unbounded_String; --Initialization
+      Last_Name : Unbounded_String;  --Without initialization
+      Full_Name : Unbounded_String;
+   begin
+      Put_Line("Enter your first name:");
+      -- Next Get_Line is from Ada.Strings.Unbounded.Text_IO package
+      First_Name := Get_Line;
+      
+      Put_Line("Enter your last name:");
+      Last_Name := Get_Line;
+      
+      --Full_Name := First_Name; --Valid
+      -- Full_Name := Last_Name; --Valid
+      Full_Name := First_Name & " " & Last_Name;
+      
+      --Put_Line(To_String(Full_Name)); Without any extra libraries
+      Put_Line(Full_Name); --OK when I include Ada.Strings.Unbounded.Text_IO;
+      Put_Line("Full Name Length " & Length(Full_Name)'Image);
+   end; 
+```
+
+# User input
+
+-## Reading Integer form User Input
+
+```ada
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
+```
+
+- ## Integer input
+  
+```ada
+   -- Sample 9 : Read Numvers fron Input
+   declare
+      Age : Integer;
+   begin
+      Put_Line("Enter Your Age:");
+      Get(Age);
+
+      --Put(Age); --Put method is overloaded
+      Put_Line("Your age is " & Age'Image);
+   end;
+   
+```
+
+- ## Integer with Exception handling
+  
+```ada
+   -- Sample 10 : Reading numbers with Exception Handling
+   declare
+      Age : Integer;
+   begin
+      Put_Line("Enter Your Age:");
+      
+      Get(Age);
+   
+      --Put(Age); --Put method is overloaded
+      Put_Line("Your age is " & Age'Image);
+   exception
+      when Data_Error =>
+         Put_Line("You did not enter a Number");
+   end;
+```
+
+- ## Integer with Exception handling another way
+
+```ada
+   -- Sample 11 :
+   declare
+      Age_Input : Unbounded_String;
+      Age : Integer;
+   begin
+      Age_Input := Get_Line;
+      Age := Integer'Value(To_String(Age_Input));
+      Put_Line("Your Age is " & Age'Image);
+   exception
+      --when Constraint_Error
+      --   => Put_Line("Bad Input");
+         --AnyException at all
+      when others  
+         => Put_Line("Bad Input");
+   end;
+```
