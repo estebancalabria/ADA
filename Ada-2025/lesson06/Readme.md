@@ -145,3 +145,157 @@ end;
       Put_Line(To_String(Custom_Coordinage));
    end;
 ```
+
+- ## Sample 4 : Discriminat recortds
+
+```ada
+   --Sample 4 - Records with discriminants
+   declare
+   
+      --Records should have a fixex length. This wont compile
+      --  type Person is record
+      --     First_Name : String;
+      --     Last_Name : String;
+      --  end record;
+      
+      --  Name_Length : constant Integer := 5;
+      --  subtype Name_String is String(1..Name_Length);
+      --  type Person is record
+      --     First_Name : Name_String;
+      --     Last_Name : Name_String;
+      --  end record;
+      
+      --  Name_Length : constant Integer := 5;
+      --  type Person (Size:Natural) is record
+      --     First_Name : String(1..Size);
+      --     Last_Name : String(1..Size);
+      --  end record;
+      
+      type Person (First_Name_Length : Natural; Last_Name_Length : Natural) is record
+           First_Name : String(1..First_Name_Length);
+           Last_Name : String(1..Last_Name_Length);
+      end record;
+      
+      --Now My Last Name and My first name shoult have exacly Name_Lenght characters
+      --Me : Person := (First_Name=> "Esteb", Last_Name => "Calab");
+      First_Name : String := "Esteban";
+      Last_Name : String := "Calabria";
+      Me : Person := (First_Name_Length => First_Name'Length,                     
+                      Last_Name_Length => Last_Name'Length,                
+                      First_Name=> First_Name,                      
+                      Last_Name => Last_Name);
+     
+      function To_String(APerson:Person) return String is
+      begin
+         return APerson.First_Name & " " & APerson.Last_Name;
+      end;
+      
+   begin
+      Put_Line(To_String(Me));
+      Put_Line(Me.First_Name_Length'Image); --Its also a field
+   end;
+```
+
+- # Sample 5 : Full Discriminant Records
+
+```ada
+   -- Sample 5 : Full Discriminant Records
+   declare
+      --Discriminants muyt be a discrete type
+      --NOT POSIIBLE
+      --  type Person (First_Name : String; Last_Name:String) is record
+      --       null;
+      --  end record;
+      
+      --Some people do this
+      type Point (X:Integer; Y:integer)is record
+         null;         
+      end record;
+      --instead of this
+      --  type Point is record
+      --     X:Integer;
+      --     Y:integer;
+      --  end record;
+      --But I wont recomend it
+      
+      My_Point : Point := (X => 1, Y => 2);
+   begin
+      Put_Line(My_Point.X'Image & "-" & My_Point.Y'Image);   
+   end;
+```
+
+- # Sample 6 : Using Records With Packages
+
+* Package Specification
+
+```ada
+package Points is
+
+   subtype Point_Distance is Float;
+   
+   type Point is record
+      X,Y : Float := 0.0;
+   end record;
+   
+   function "+"(Source: Point; Destination: Point) return Point;
+
+   function To_String(Value:Point) return String;
+   
+   function Length(Value : Point ) return Point_Distance;
+   
+end Points;
+```
+
+* Package Body
+
+```ada
+with Ada.Numerics.Elementary_Functions; use Ada.Numerics.Elementary_Functions;
+
+package body Points is
+
+   function "+"(Source: Point; Destination: Point) return Point is
+      result : Point;
+   begin
+      result.X := Source.X + Destination.X;
+      result.Y := Source.Y + Destination.Y;
+      return result;
+   end;
+   
+
+   function To_String(Value:Point) return String is
+   begin
+      return "(" & Value.X'Image & "," & Value.Y'Image & ")";
+   end;
+   
+   
+   function Length(Value : Point ) return Point_Distance is
+   begin
+      return  Sqrt( (Value.X * Value.X) + (Value.Y * Value.Y) );                                      
+   end Length;
+        
+
+end Points;
+```
+
+* package Import
+
+```ada
+with Points; use Points;
+```
+
+* Usage
+
+```ada
+   -- Sample 06
+   declare
+      P1 : Point := (X=>2.0, Y=>3.0);
+      P2 : Point := (X=>1.0, Y=>0.0);
+      P3 : Point;
+   begin
+      Put_Line(To_String(P1));
+      P3 := P1 + P2;
+      Put_Line(To_String(P3));
+      Put_Line("P1 length" & Length(P1)'Image);
+   end;
+```
+
