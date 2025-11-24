@@ -166,3 +166,63 @@ end Fractions;
       --Put_Line(F1.Num'Image);
    end;
 ```
+
+# Ada.Containers (Existing ADA Types)
+
+## Vector (Generic Type Introduction)
+
+* Package
+```ada
+with Ada.Containers.Vectors;--List<> in hava
+```
+
+* Usage
+```ada
+   --Sample 2 : Use existing Abstract Data Type
+   declare
+      package Integer_Vector is new Ada.Containers.Vectors
+        (Index_Type => Positive,
+         Element_Type => Integer);
+      
+      use Integer_Vector;
+      
+      Numbers : Vector;
+   begin
+      Append(Numbers, 35);
+      Append(Numbers, 20);
+      Append(Numbers, 50);
+      Append(Numbers, 6);
+      
+      for Num of Numbers loop
+         Put_Line(Num'Image);
+      end loop;
+      
+   end;
+```
+
+## Double Linked List
+
+* Package
+```ada
+with Ada.Containers.Doubly_Linked_Lists
+```
+
+* Usage
+```ada
+   declare
+      package Integer_List is new Ada.Containers.Doubly_Linked_Lists
+        (Element_Type=> Integer);
+      
+      My_List : Integer_List.List;
+   begin
+      --Since i dod not write use Imteger_list i have to put the name of the package all the time
+      Integer_List.Append(My_List, 200);
+      Integer_List.Append(My_List, 300);
+      Integer_List.Append(My_List, 400);
+      Integer_List.Prepend(My_List, 100);
+      
+      for Num of My_List loop
+         Put_Line(Num'Image);
+      end loop;
+   end;
+```
