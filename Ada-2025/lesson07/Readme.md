@@ -167,6 +167,103 @@ end Fractions;
    end;
 ```
 
+## Integer_Stack
+
+*Package Specification
+```ada
+package Integer_Stack is
+   
+   Stack_Overflow : exception;
+   Stack_Empty: exception;
+
+   type Stack(Max_Length:Positive) is private;
+   
+   procedure Push(Item: in out Stack; Value : Integer);
+   function Pop(Item: in out Stack) return  Integer;
+   function Is_Empty(Item: Stack) return Boolean;
+   function Is_Full(Item: Stack) return Boolean;
+
+private   
+   
+   type Stack_Data is array (Positive Range <>) of Integer;
+   
+   type Stack(Max_Length:Positive) is record
+      Last_Index : Natural := 0;
+      Data :  Stack_Data(1..Max_Length);
+   end record;
+
+end Integer_Stack;
+```
+
+*Package Body
+```ada
+package body Integer_Stack is
+
+   procedure Push(Item: in out Stack; Value : Integer) is
+   begin
+      if (Item.Last_Index = ITem.Data'Last) then
+         raise Stack_Overflow with "Stack Overflow. Stack is full";      
+      end if;
+      
+      Item.Data(Item.Last_Index+1) := Value;
+      Item.Last_Index := Item.Last_Index+1;
+   end Push;
+   
+   
+   function Pop(Item: in out Stack) return  Integer is 
+      Result : Integer;
+   begin
+      if Item.Last_Index=0 then
+         raise Stack_Empty with "Cannot Pop : Stack is empty";      
+      end if;
+      
+      Result := Item.Data(Item.Last_Index);
+      Item.Last_Index := Item.Last_Index - 1;
+      return Result; 
+   end Pop;
+   
+   function Is_Empty(Item: Stack) return Boolean is
+   begin
+      return Item.Last_Index=0;
+   end Is_Empty;
+   
+
+   function Is_Full(Item: Stack) return  Boolean is
+   begin
+      return Item.Last_Index = ITem.Data'Last;
+   end Is_Full;
+   
+end Integer_Stack;
+```
+
+*Package Usage Declaration
+```ada
+with Integer_Stack; use Integer_Stack;
+```
+
+*Package Usage Sample
+```ada
+   --Sample 4 : Integer Stacl
+   declare
+      My_Stack : Stack(10);
+   begin
+      Push(My_Stack, 10);
+      Push(My_Stack, 20);
+      Push(My_Stack, 30);
+      Push(My_Stack, 40);
+      
+      while not(Is_Empty(My_Stack)) loop
+         declare
+            Elem : Integer := Pop(My_Stack);
+         begin
+            Put_Line(Elem'Image);
+         end;         
+      end loop;      
+   end;
+
+```
+
+
 # Ada.Containers (Existing ADA Types)
 
 ## Vector (Generic Type Introduction)
