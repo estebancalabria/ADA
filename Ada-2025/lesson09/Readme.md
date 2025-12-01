@@ -131,3 +131,18 @@
       Put_Line(P2.X'Image & "  " & P2.Y'Image);
    end;
 ```
+
+- ## Swap with Generics and packages
+
+* Package Specification
+```ada
+```
+* Package Body
+```ada
+```
+
+* Usage
+```ada
+```
+
+- 
